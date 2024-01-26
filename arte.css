@@ -112,6 +112,12 @@ h5{
     margin-left: 365px;
 }
 
+.video-youtube{
+    width: 640px;
+    height: 360px;
+    margin-left: 20%;
+}
+
 /*Botões LGPD */
 
 #lgpd-aula2{
