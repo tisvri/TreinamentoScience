@@ -272,7 +272,8 @@ margin-left: 580px;
 .menu{
     list-style: none;
     float: left;
-    margin-left: 850px;
+    display: flex;
+    margin-left:350%;
 }
 
 .menu li{
