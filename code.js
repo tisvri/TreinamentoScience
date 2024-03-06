@@ -3,7 +3,7 @@ document.getElementById("Botaolgpd").onclick = function () {
     window.location.href = "../treinamentolgpd/TreinamentosLGPD.html";
 };
 
-document.getElementById("Botaotecnologia").onclick = function () {
+document.getElementById("Botaotecnologiacentral").onclick = function () {
     window.location.href = "../treinamentotecnologia/hubtecnologia.html"
 };
 
@@ -12,7 +12,7 @@ document.getElementById("Botaoregulatorio").onclick = function () {
 };
 
 document.getElementById("Botaoqualidade").onclick = function () {
-    window.location.href = "../treinamentoqualidade/TreinamentoQualidade.html";
+    window.location.href = "../treinamentoqualidade/TreinamentoQualidade2.html";
 };
 
 document.getElementById("Botaorh").onclick = function () {

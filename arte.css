@@ -19,6 +19,16 @@ body {
     /* Alinha os itens verticalmente ao centro */
 }
 
+#Botaoapresentacao {
+    margin-left: 25%;
+}
+
+
+
+#poloimg {
+    margin-left: 40%;
+}
+
 .imagem-com-fundo img {
     max-width: 100%;
     height: auto;
@@ -28,18 +38,23 @@ body {
 
 h2 {
     color: #EC0E73;
+    font-size: 50px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
-    /* Remove a margem padrão do h2 */
+    font-family: 'Bw Seido Raw Black';
+}
+
+h4 {
+    font-family: "SourceSansPro Light";
+    font-size: 20px;
+    margin-left: 39%;
 }
 
 #h2formulario {
     color: #EC0E73;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Bw Seido Raw Black';
     margin: 0;
-    margin-left: 400px;
+    margin-left: 23%;
 }
 
 
@@ -60,7 +75,7 @@ h5 {
 }
 
 .painel {
-    background-color: #ffffff;
+    background-color: #041266;
     ;
     margin-right: 10%;
     margin-left: 10%;
@@ -68,64 +83,120 @@ h5 {
 
 #academy {
     height: 250px;
-    width: 30%;
-    margin-left: 35%;
+    width: 28%;
+    margin-left: 69%;
+    margin-top: -250px;
+}
+
+#Botaorh {
+    margin-left: 17%;
+    margin-top: -10px;
+}
+
+
+#Botaosistemas {
+    margin-left: 290%;
+}
+
+#Botaotreinopolotrail {
+    margin-top: -150px;
+    margin-left: 8%;
+}
+
+
+#Botaopolotrail {
+    margin-top: -19px;
 }
 
 #BotaoAcademy {
-    margin-left: 58%;
+    margin-left: 18%;
+    margin-top: -15px;
+}
+
+#Botaolgpd {
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+
+
+
+.testeconteiner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteinerbotao {
+    margin-top: 20px;
+}
+
+#Botaotecnologiacentral {
+    margin-left: 18%;
+    align-items: center;
 }
 
 #ch {
     height: 250px;
-    width: 30%;
+    width: 28%;
+    margin-left: 36%;
+    margin-top: -248px;
 }
 
 #lgpd {
     height: 250px;
-    width: 30%;
+    width: 28%;
+    margin-left: 3%;
 }
 
 
 #tecnologia {
     height: 250px;
     width: 28%;
-    margin-left: 37%;
+    margin-left: 69%;
+    margin-top: -250px;
 }
 
-#Botaotecnologia {
-    margin-left: 58%;
-    align-items: center;
+#Botaocontroladoria {
+    margin-left: 15%;
 }
+
+
 
 #Botaoindex {
     margin-left: 33%;
 }
 
 #Botaodiretrizes {
-    margin-left: 45%;
+    margin-left: 8%;
     position: relative;
-    top: -70px;
+
 }
 
 #regulatorio {
     height: 250px;
-    width: 30%;
+    width: 28%;
+    margin-left: 36%;
+    margin-top: -250px;
 }
 
+
+
+
 #Botaoregulatorio {
-    margin-left: 70px;
+    margin-left: 19%;
 }
 
 #imagensregulatorioQualidade {
     height: 250px;
-    width: 30%;
-    margin-left: 38%;
+    width: 28%;
+    margin-left: 3%;
 }
 
 #Botaoqualidade {
-    margin-left: 60%;
-    align-items: center;
+    margin-top: 10px;
+    margin-left: 9%;
+
 }
 
 .video {
@@ -342,7 +413,8 @@ h5 {
     list-style: none;
     float: left;
     display: flex;
-    margin-left: 350%;
+    margin-left: 400%;
+    font-family: "SourceSansPro Light";
 }
 
 .menu li {
@@ -395,7 +467,7 @@ h5 {
 
 
 #Botaohubtreinamentos {
-    margin-left: 33%;
+    margin-left: 30%;
 }
 
 .botao-linkhub {
@@ -467,6 +539,36 @@ h5 {
     margin-bottom: 10px;
 }
 
+.botao-linkpolo {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #EC0E73;
+    /* Cor de fundo do botão */
+    color: #ffffff;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    border: none;
+    /* Remove a borda padrão do botão */
+    border-radius: 10px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Altera o cursor ao passar por cima do botão */
+    font-size: 15px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Peso da fonte */
+    margin-left: 90px;
+    margin-bottom: 10px;
+}
+
+.botao-linkpolo:hover {
+    background-color: #d1156afa;
+    /* Cor de fundo quando o mouse passa por cima */
+}
+
+
+
 .botao-linkhub:hover {
     background-color: #d1156afa;
     /* Cor de fundo quando o mouse passa por cima */
@@ -492,8 +594,9 @@ form {
 #painelformulario {
     margin-left: 50px;
     margin-right: 40px;
-    color: black;
-    background-color: #ffff;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    ;
 }
 
 #finishButton {
