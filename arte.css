@@ -187,7 +187,17 @@ h5 {
     margin-left: 19%;
 }
 
+#Botaofeasibility {
+    margin-left: 10%;
+}
+
 #imagensregulatorioQualidade {
+    height: 250px;
+    width: 28%;
+    margin-left: 3%;
+}
+
+#imagemfeasibility {
     height: 250px;
     width: 28%;
     margin-left: 3%;

@@ -26,3 +26,7 @@ document.getElementById("BotaoAcademy").onclick = function () {
 document.getElementById("Botaoindex").onclick = function () {
     window.location.href = "../index.html"
 };
+
+document.getElementById("Botaofeasibility").onclick = function () {
+    window.location.href = "../treinamentofeasibility/TreinamentoFeasibility.html"
+};
