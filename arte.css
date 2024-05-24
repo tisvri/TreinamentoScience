@@ -191,6 +191,7 @@ h5 {
     margin-left: 10%;
 }
 
+
 #imagensregulatorioQualidade {
     height: 250px;
     width: 28%;
@@ -631,4 +632,8 @@ form {
     /* Peso da fonte */
     margin-left: 600px;
     margin-bottom: 10px;
+}
+
+#Botaopop {
+    margin-left: 20%;
 }

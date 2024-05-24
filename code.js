@@ -30,3 +30,8 @@ document.getElementById("Botaoindex").onclick = function () {
 document.getElementById("Botaofeasibility").onclick = function () {
     window.location.href = "../treinamentofeasibility/TreinamentoFeasibility.html"
 };
+
+
+document.getElementById("Botaopop").onclick = function () {
+    window.location.href = "../secao_pops/centralpops.html"
+};
