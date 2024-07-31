@@ -1,5 +1,5 @@
 document.getElementById("BotaoIntegração").onclick = function () {
-    window.location.href = "./index.html"
+    window.location.href = "index.html"
 };
 
 document.getElementById("Botaocontroladoria").onclick = function () {
