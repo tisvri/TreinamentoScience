@@ -7,38 +7,38 @@ document.getElementById("Botaocontroladoria").onclick = function () {
 };
 
 document.getElementById("Botaodiretrizes").onclick = function () {
-    window.location.href = "./politicas/politicasdone.html"
+    window.location.href = "../politicas/politicasdone.html"
 };
 
 document.getElementById("Botaotecnologia").onclick = function () {
-    window.location.href = "./integracaoti/IntegracaoTI.html"
+    window.location.href = "../integracaoti/IntegracaoTI.html"
 };
 
 document.getElementById("Botaolgpd").onclick = function () {
-    window.location.href = "./treinamentolgpd/TreinamentosLGPD.html";
+    window.location.href = "../treinamentolgpd/TreinamentosLGPD.html";
 };
 
 document.getElementById("BotaoCTMS").onclick = function () {
-    window.location.href = "./TreinamentoCtms/TreinamentoCtms.html"
+    window.location.href = "../TreinamentoCtms/TreinamentoCtms.html"
 };
 
 document.getElementById("Botaotecnologiacentral").onclick = function () {
-    window.location.href = "./treinamentotecnologia/hubtecnologia.html"
+    window.location.href = "../treinamentotecnologia/hubtecnologia.html"
 };
 
 document.getElementById("Botaoqualidade").onclick = function () {
-    window.location.href = "./treinamentoqualidade/TreinamentoQualidade2.html";
+    window.location.href = "../treinamentoqualidade/TreinamentoQualidade2.html";
 };
 
 document.getElementById("BotaoAcademy").onclick = function () {
-    window.location.href = "./treinamentoacademy/TreinamentoAcademy.html";
+    window.location.href = "../treinamentoacademy/TreinamentoAcademy.html";
 };
 
 document.getElementById("Botaopop").onclick = function () {
-    window.location.href = "./secao_pops/centralpops.html"
+    window.location.href = "../secao_pops/centralpops.html"
 };
 
 document.getElementById("BotaoFinanceiroPolo").onclick = function () {
-    window.location.href = "./Treinamento_Financeiro_Polotrial/TreinamentoFinanceiroPolotrial_Aula1.html"
+    window.location.href = "../Treinamento_Financeiro_Polotrial/TreinamentoFinanceiroPolotrial_Aula1.html"
 };
 
