@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Regulatório</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseFormulario.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <a href="../treinamentoregulatorio/TreinamentoRegulatorio.html">
-
-            <img src="../img/Logo Science.png" alt="Logo Science">
-        </a>
-        <h2 id="h2formulario">Q U E S T Õ E S</h2>
-    </div>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <h2 id = "h2formulario">QUESTÕES</h2>
+        </div>
+    </header>   
     <br>
     <br>
     <form id="quizForm" onsubmit="return validateQuiz()">
         <div id="painelformulario">
             <div style="display: flex; flex-wrap: wrap;">
                 <div style="flex: 1; margin-right: 20px;">
-                    <label for="q1"> Qual a finalidade da plataforma regulatório SVRI?</label>
+                    <label for="q1">1. Qual a finalidade da plataforma regulatório SVRI?</label>
                     <br>
                     <br><input type="radio" name="q1" value="a"> a) Destina-se somente ao gerenciamento dos documentos
                     SVRI <br>
@@ -53,7 +56,7 @@
                     <label for="q3">3. Na opção Painel de documentos, e após cadastrar o tipo de documento que serão
                         trocados entre o patrocinador e a SVRI. Nessas trocas , as cores vermelho e verde representam
                         qual status dos “uploads” ?</label><br>
-                    <br><input type="radio" name="q3" value="a"> a)Cor vermelha, não foi feito ainda nenhum upload para
+                    <br><input type="radio" name="q3" value="a"> a) Cor vermelha, não foi feito ainda nenhum upload para
                     o tipo de documento em relação à instituição – o Patrocinador / CRO está devendo.<br>
                     <br><input type="radio" name="q3" value="b"> b) Cor verde, já foi feito pelo menos um upload para o
                     tipo de documento em relação à instituição.<br>
@@ -99,8 +102,7 @@
         </div>
         <br>
         <button type="submit" id="botaoverificar">Verificar</button>
-        <button type="button" id="finishButton" style="display: none;"
-            onclick="window.location.href='https://forms.office.com/r/AVDbLZJza2';">Finalizar</button>
+        <button type="button" id="finishButton" style="display: none;">Finalizar</button>
     </form>
 
     <script>
@@ -157,6 +159,10 @@
 
             // Evite o envio do formulário
             return false;
+        }
+
+        document.getElementById("finishButton").onclick = function () {
+        window.location.href = "TreinamentoRegulatorioformularioSatisfacao.html";
         }
     </script>
 </body>

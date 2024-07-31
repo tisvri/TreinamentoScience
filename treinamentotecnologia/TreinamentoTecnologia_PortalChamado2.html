@@ -5,36 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Tecnologia</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseTreinamentos.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
             <ul class="menu">
                 <li><a href="../integracaoti/IntegracaoTI.html">Integração Science</a></li>
                 <li><a href="#">Aulas</a>
                     <ul>
-                        <li><a href="TreinamentoTecnologia_PortalColaborador.html">Acesso e visão geral</a></li>
-                        <li><a href="TreinamentoTecnologia_PortalColaborador2.html">Alteração de Senha</a></li>
-                    </ul>
+                        <li><a href="TreinamentoTecnologia_PortalChamado.html">Abertura de chamado</a></li>
+                        <li><a href="TreinamentoTecnologia_PortalChamado2.html">Alteração de Senha</a></li>
+                   </ul>
+                </li>
             </ul>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <h2>P O R T A L <br> D E <br> C H A M A D O</h2>
-    <br>
-    <h5>Alteração de senha</h5>
-    <br>
-    <iframe class="video"
+        </div>
+    </header>
+
+    <h2>PORTAL DE CHAMADO</h2>
+    
+    <h3>Alteração de senha</h3>
+    
+    <iframe class="videoTreinamento"
         src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=66036e4b-7377-41bb-b920-80be0bc88e24&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
         width="640" height="360" frameborder="0" scrolling="no" allowfullscreen
         title="Portal de chamado - Alteração de senha.mp4"></iframe>
-    <br>
-    <br>
-    <button class="botaovideoEmail" id="proximo">Finalizar Integração</button>
+    
+    <button class="botaovideo" id="proximo">Finalizar Integração</button>
     <script>
         document.getElementById("proximo").onclick = function () {
             window.location.href = "https://forms.office.com/r/h8S3sXGJAM";

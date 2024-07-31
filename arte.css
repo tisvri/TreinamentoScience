@@ -76,7 +76,7 @@ h5 {
 
 .painel {
     background-color: #041266;
-    ;
+    
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -118,6 +118,11 @@ h5 {
     margin-left: 10%;
 }
 
+#BotaoFinanceiroPolo {
+    margin-left: 18%;
+    margin-top: -15px;
+}
+
 
 
 
@@ -156,6 +161,23 @@ h5 {
     margin-left: 69%;
     margin-top: -250px;
 }
+
+#Pops {
+    height: 250px;
+    width: 28%;
+    margin-left: 36%;
+    margin-top: -248px;
+}
+
+#FinanceiroPolo {
+    height: 250px;
+    width: 28%;
+    margin-left: 69%;
+    margin-top: -250px;
+}
+
+
+
 
 #Botaocontroladoria {
     margin-left: 15%;

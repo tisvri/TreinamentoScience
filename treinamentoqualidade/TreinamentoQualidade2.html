@@ -5,37 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Qualidade</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseTreinamentos.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
-            <ul class="menu">
-                <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
-                <li><a href="#">Aulas</a>
-                    <ul>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="opçoes">
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                    <li><a href="#">Aulas</a>
+                        <ul>
                         <li><a href="TreinamentoQualidade2.html"> Como obter folha de rosto </a></li>
                         <li><a href="TreinamentoQualidade3.html"> Regulatório Plataforma Brasil </a></li>
                         <li><a href="TreinamentoQualidade5.html"> Utilização do banco de dados</a></li>
-                    </ul>
-            </ul>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <h2> T R E I N A M E N T O <br> Q U A L I D A D E </h2>
-    <br>
-    <h3> Como obter folha de rosto </h5>
-        <br>
-        <iframe class="video"
+                   </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <h2> TREINAMENTO - QUALIDADE </h2>
+    
+    <h3> Como obter folha de rosto </h3>
+        <div class="videoTreinamento">
+            <iframe class="videoTreinamento"
             src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=9a36730d-941d-464c-a303-d7231a0aaedc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
             width="640" height="360" frameborder="0" scrolling="no" allowfullscreen
-            title="Treinamento PB_ como obter folha de rosto.-20230502_101101-Gravação de Reunião.mp4"></iframe>
-        <br>
-        <br>
-        <button class="botaovideoEmail" id="qualidade-aula2">Regulatório Plataforma Brasil</button>
+            title="Treinamento PB_ como obter folha de rosto.-20230502_101101-Gravação de Reunião.mp4"></iframe></div> 
+        <button class="botaovideo" id="qualidade-aula2">Regulatório Plataforma Brasil</button>
         <script>
             document.getElementById("qualidade-aula2").onclick = function () {
                 window.location.href = "TreinamentoQualidade3.html";

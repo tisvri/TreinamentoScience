@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento Plataforma CTMS</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseImgBotoes.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>Treinamento Plataforma CTMS</h2>
+
+    <div class="painel">
+        <div class="imgtec">
+            <img class="imgtec" src="../assets/img/Integração de Cursos.jpg" id="tech">
+        </div>
+        
+        <div class="Botoes_grid">
+
+            <div class="Botoes">
+                <button id="BotaoRegulatorio" class="botaovideo">REGULATÓRIO</button>
+            </div>
+
+            <div class="Botoes">
+                <button id="BotaoFeasibility" class="botaovideo">FEASIBILITY</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.getElementById("BotaoRegulatorio").onclick = function () {
+            window.location.href = "../treinamentoregulatorio/TreinamentoRegulatorio.html"
+        };
+
+        document.getElementById("BotaoFeasibility").onclick = function () {
+            window.location.href = "../treinamentofeasibility/TreinamentoFeasibility.html"
+        };
+    </script>
+</body>
+
+</html>

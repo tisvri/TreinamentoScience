@@ -5,41 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Políticas e Diretrizes</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseImgBotoes.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <a href="https://svriglobal.com/">
-            <img src="../img/Logo Science.png" alt="Logo Science">
-        </a>
-    </div>
-    <br>
-    <br>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <div class="painel">
         <div class="treinamentos">
-            <br>
-            <h2> A T E N Ç Ã O !</h2>
+            <h2> ATENÇÃO!</h2>
         </div>
-        <br>
-        <br>
         <p>Caso seja a primeira vez que você esteja vendo as políticas, continue o fluxo normalmente.
             Após o término da leitura, vá para a <b><i>integração tecnologia</i></b></p>
-        <br>
+
         <p>Se você só precisa se atualizar em relação as políticas, leia e finalize a integração com o
             <b><i>formulário</i></b>
         </p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div>
-            <button id="Botaodiretrizes" class="botao-link">Políticas e Diretrizes </button>
-            <button id="Botaoformdiretrizes" class="botao-link"> Formulário a integração </button>
+        
+        <div class="Botoes_grid">
+            <button id="Botaodiretrizes" class="botaovideo">Políticas e Diretrizes </button>
+            <button id="BotaoCodigoConduta" class="botaovideo"> Código de Conduta e Ética </button>
+            <button id="Botaoformdiretrizes" class="botaovideo"> Formulário a integração </button>
         </div>
         <script>
             document.getElementById("Botaodiretrizes").onclick = function () {
                 window.location.href = "https://netorgft4487772.sharepoint.com/:f:/s/ScienceValley/EkJmpZ2uovJCsakM2u6JaUAB1BdrWDbTg8QhPpectsSdVw?e=KShpK4"
+            };
+
+            document.getElementById("BotaoCodigoConduta").onclick = function () {
+                window.location.href = "Codigodeconduta.html"
             };
 
             document.getElementById("Botaoformdiretrizes").onclick = function () {

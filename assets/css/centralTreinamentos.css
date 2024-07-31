@@ -1,0 +1,71 @@
+
+
+@import url('HeaderBaseIndexCentral.css');
+
+
+h2{
+    text-align: center;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.CursosList {
+    text-align: center;
+}
+
+.CursosList img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+
+.CursosList h3 {
+    margin: 10px 0;
+}
+
+.CursosList button {
+    margin-bottom: 10px;
+}
+
+.botaoAcesso{
+    padding: 5px 5px;
+    background-color: #EC0E73;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block; /* Para o elemento ocupar a largura total */
+    width: 200px; /* Defina um valor de largura adequado */
+    margin: 15px auto;
+
+}
+
+
+@media screen and (max-width: 950px){
+    .CursosList {
+        display: inline-block;
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        vertical-align: top;
+        text-align: center;
+    }
+    nav ul li {
+        display:inline-flex;
+        margin-right: 20px;
+    }
+}

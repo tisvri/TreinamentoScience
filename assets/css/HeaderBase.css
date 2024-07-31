@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'BW Seido Raw';
+    src: url('fonts/BWSeidoRaw-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'BW Seido Raw';
+    src: url('fonts/BWSeidoRaw-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
+:root{
+    --cor-de-fundo: #041266;
+    --cor-de-fonte: #FFFFFF;
+    --cor-do-titulo: #EC0E73;
+    --cor-branca: #FFFFFF;
+    --preto85: #414140;
+    --preto50: #8A8B8A;
+    --preto: #000000;
+    --fonte-principal: "Source Sans";
+    --fonte-secundaria: "BW Seido Raw"
+}
+
+html,
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--cor-de-fonte);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_pagina{
+    background-color: var(--cor-branca);
+    padding: 10px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.img_menu{
+    margin-block: auto;
+    margin-top: 5px
+}
+
+.logo{
+    max-height: 100px;
+    height: 55px;
+    margin-left: 20px;
+}

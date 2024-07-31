@@ -5,38 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Regulatório</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseTreinamentos.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
-            <ul class="menu">
-                <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
-                <li><a href="#">Aulas</a>
-                    <ul>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="opçoes">
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                    <li><a href="#">Aulas</a>
+                        <ul>
                         <li><a href="TreinamentoRegulatorio.html"> Cadastro </a></li>
                         <li><a href="TreinamentoRegulatorio2.html"> CEP - CONEP </a></li>
                         <li><a href="TreinamentoRegulatorio3.html"> Relatório Print PB </a></li>
                         <li><a href="TreinamentoRegulatorio4.html"> Troca de documentos iniciais </a></li>
-                    </ul>
-            </ul>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <h2> T R E I N A M E N T O <br> R E G U L A T Ó R I O </h2>
-    <br>
-    <h3> Cadastro </h5>
-        <br>
-        <iframe class="video"
+                   </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <h2> TREINAMENTO - REGULATÓRIO </h2>
+    <h3> Cadastro </h3>
+        <div class="videoTreinamento">
+            <iframe class="videoTreinamento"
             src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=89793c8e-f93c-4082-9cf6-88a570ffec05&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
             width="640" height="360" frameborder="0" scrolling="no" allowfullscreen
-            title="Plataforma Brasil cadastro.mp4"></iframe>
-        <br>
-        <br>
-        <button class="botaovideoEmail" id="regulatorio-aula2">CEP - CONEP</button>
+            title="Plataforma Brasil cadastro.mp4"></iframe></div> 
+        <button class="botaovideo" id="regulatorio-aula2">CEP - CONEP</button>
         <script>
             document.getElementById("regulatorio-aula2").onclick = function () {
                 window.location.href = "TreinamentoRegulatorio2.html";

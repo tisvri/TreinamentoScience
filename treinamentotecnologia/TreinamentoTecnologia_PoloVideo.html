@@ -5,36 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Polotrail</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseTreinamentos.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
-            <ul class="menu">
-                <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
-                <li><a href="#">Aulas</a>
-                    <ul>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="opçoes">
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                    <li><a href="#">Aulas</a>
+                        <ul>
                         <li><a href="TreinamentoTecnologia_PoloVideo.html"> Cadastro de Monitoria no PoloTrail </a></li>
                         <li><a href="TreinamentoTecnologia_PoloVideo2.html"> Utilização do PoloTrail </a></li>                    </ul>
-            </ul>
-            </ul>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <h2> P O L O T R A I L</h2>
-    <br>
+           </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <h2> POLOTRAIL</h2>
+    
     <h3> Cadastro de Monitoria no PoloTrail </h3>
-    <br>
-    <iframe class="video"
+    
+    <iframe class="videoTreinamento"
         src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=edaa98d6-d589-48d5-828e-ba7d5af7f233&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
         width="640" height="360" frameborder="0" scrolling="no" allowfullscreen
         title="e Learning - Cadastro de Monitoria no PoloTrial_Abr23.mp4"></iframe>
-    <br>
-    <br>
-    <button class="botaovideoEmail" id="qualidade-aula1">Utilização da PoloTrail</button>
+    
+    <button class="botaovideo" id="qualidade-aula1">Utilização da PoloTrail</button>
     <script>
         document.getElementById("qualidade-aula1").onclick = function () {
             window.location.href = "TreinamentoTecnologia_PoloVideo2.html";

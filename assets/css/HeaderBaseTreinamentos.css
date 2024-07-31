@@ -1,0 +1,102 @@
+@import url('HeaderBase.css');
+
+body{
+    font-size: 28px;
+}
+
+header{
+    font-size: 20px;
+}
+ul{
+    list-style-type: none;
+}
+
+.menu {
+    /* Defina display flex para alinhar os itens verticalmente */
+    display: flex;
+    /* Alinhe os itens verticalmente ao centro */
+    align-items: center;
+    /* Ajuste opcional para alinhar horizontalmente */
+    justify-content: center; /* ou flex-start ou flex-end, dependendo do layout desejado */
+}
+
+.menu li {
+    
+    position: relative;
+    border-right: 1px solid #041266;
+}
+
+.menu li a {
+    color: #EC0E73;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li ul {
+    
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    font-size: 12px;
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+h2, h3, p{
+    text-align: center;
+}
+
+.videoTreinamento{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 360px;
+    max-width: 640px;
+    max-height: 360px;    
+}
+
+.botaovideo{
+    padding: 5px 5px;
+    background-color: #EC0E73;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block; /* Para o elemento ocupar a largura total */
+    width: 200px; /* Defina um valor de largura adequado */
+    margin: 15px auto;
+
+}
+
+header h2{
+    color:#EC0E73;
+    padding-left: 20px;
+}
+
+p{
+    padding: 15px;
+}
+
+@media screen and (max-width: 550px){
+    ul{
+        padding-left: 20px;
+    }
+}
+

@@ -5,60 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integração</title>
-    <link rel="stylesheet" type="text/css" href="arte.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/index.css">    
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <a href="https://svriglobal.com/">
-            <img src="img/Logo Science.png" alt="Logo Science">
-        </a>
-        <button id="Botaohubtreinamentos" class="botao-link">Treinamentos Science</button>
-    </div>
-    <br>
-    <br>
-    <div class="painel">
-        <div class="treinamentos">
-            <br>
-            <h2> B E M V I N D O !</h2>
+
+    
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="itens_menu">
+                <nav>
+                    <ul>
+                        <button id="Botaohubtreinamentos" class="botao-link">Treinamentos Science</button>
+                        <button id="Botaocontroladoria" class="botao-link">Integração Controladoria</button>
+                        <button id="Botaodiretrizes" class="botao-link">Políticas e Diretrizes </button>
+                        <button id="Botaotecnologia" class="botao-link">Integração Tecnologia</button>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="painel">
+                
+            <h2> BEM VINDO!</h2>
             <h4>Assista o vídeo institucional</h4>
-            <br>
-            <br>
-            <iframe class=video-youtube src="https://www.youtube-nocookie.com/embed/GYeC2IeSzSw?si=wGcz7ldayuQflnED"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                
+                        <iframe class=video-youtube src="https://www.youtube-nocookie.com/embed/GYeC2IeSzSw?si=wGcz7ldayuQflnED"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2> I N T E G R A Ç Ã O</h2>
-        <br>
-        <br>
-        <div>
-            <button id="Botaocontroladoria" class="botao-link">Integração Controladoria</button>
-            <button id="Botaodiretrizes" class="botao-link">Políticas e Diretrizes </button>
-            <button id="Botaotecnologia" class="botao-link">Integração Tecnologia</button>
-        </div>
-        <script>
-            document.getElementById("Botaotecnologia").onclick = function () {
-                window.location.href = "integracaoti/IntegracaoTI.html"
-            };
-            document.getElementById("Botaocontroladoria").onclick = function () {
-                window.location.href = "https://netorgft4487772.sharepoint.com/:f:/s/ScienceValley/EkSziWM14z5Ft-SR-6rLyPsBFWjCaMNh_zW1U915B9oPWA?e=skPrkw"
-            };
-            document.getElementById("Botaohubtreinamentos").onclick = function () {
-                window.location.href = "centraltreinamentos/centralTreinamentos.html"
-            };
 
-            document.getElementById("Botaodiretrizes").onclick = function () {
-                window.location.href = "politicas/politicasdone.html"
-            };
-
-
-        </script>
+            <script rel="stylesheet" src="../assets/js/index.js"></script>
+    </main>
 </body>
 
 </html>

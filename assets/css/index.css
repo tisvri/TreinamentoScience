@@ -1,0 +1,30 @@
+@import url(HeaderBaseIndexCentral.css);
+
+h2, h4{
+   
+    text-align: center;
+}
+
+.video-youtube {    
+    width: 80%;
+    /* width: 70%;*/
+    max-width: 800px;
+    height: 415px;
+    display: block;
+    margin-left: 5%;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 700px){
+    iframe{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    nav ul li {
+        display:inline-flex;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,81 @@
+@import url('HeaderBase.css');
+
+*{  
+    font-size: 15px;
+}
+
+header h2{
+    color: var(--cor-do-titulo);
+    margin-left: 5%;
+    font-size: 25px;
+}
+
+#botaoverificar {
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: #EC0E73;
+    /* Cor de fundo do botão */
+    color: #ffffff;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    border: none;
+    /* Remove a borda padrão do botão */
+    border-radius: 10px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Altera o cursor ao passar por cima do botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Peso da fonte */
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 140px;
+}
+
+#botaoverificar:hover {
+    background-color: #d1156afa;
+    /* Cor de fundo quando o mouse passa por cima */
+}
+
+
+/*Formulário*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#painelformulario {
+    margin-left: 50px;
+    margin-right: 40px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    ;
+}
+
+#finishButton {
+    display: inline-block;
+    width: 150px;
+    padding: 15px 15px;
+    background-color: #EC0E73;
+    /* Cor de fundo do botão */
+    color: #ffffff;
+    /* Cor do texto do botão */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    border: none;
+    /* Remove a borda padrão do botão */
+    border-radius: 10px;
+    /* Borda arredondada */
+    cursor: pointer;
+    /* Altera o cursor ao passar por cima do botão */
+    font-size: 20px;
+    /* Tamanho da fonte */
+    font-weight: bold;
+    /* Peso da fonte */
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

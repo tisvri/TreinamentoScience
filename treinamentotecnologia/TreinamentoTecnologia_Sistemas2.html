@@ -5,35 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinamento Tecnologia</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseTreinamentos.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
-            <ul class="menu">
-                <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
-                <li><a href="#">Aulas</a>
-                    <ul>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="opçoes">
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                    <li><a href="#">Aulas</a>
+                        <ul>
                         <li><a href="TreinamentoTecnologia_Sistemas.html">Acesso ao poloTrail</a></li>
                         <li><a href="TreinamentoTecnologia_Sistemas2.html">Acesso ao regulatório</a></li>
-                    </ul>
-            </ul>
-        </nav>
-    </div>
-    <br>
-    <br>
-    <h2>A C E S S O S</h2>
-    <br>
-    <h5>Regulatório</h5>
-    <br>
-    <iframe class="video"
+                   </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <h2>ACESSOS</h2>
+    <h3>Regulatório</h3>
+    
+    <iframe class="videoTreinamento"
         src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=fffe67fc-5b78-4a1b-98c2-4b08d8a58ac3&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
         width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="Acesso Regulatorio.mp4"></iframe>
-    <br>
-    <br>
-    <button class="botaovideoEmail" id="proximo">PoloTrail</button>
+
+    <button class="botaovideo" id="proximo">PoloTrail</button>
     <script>
         document.getElementById("proximo").onclick = function () {
             window.location.href = "TreinamentoTecnologia_Polo.html";

@@ -5,38 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Módulos Science</title>
-    <link rel="stylesheet" type="text/css" href="../arte.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseImgBotoes.css">
 </head>
 
 <body>
-    <div class="imagem-com-fundo">
-        <img src="../img/Logo Science.png" alt="Logo Science">
-        <nav>
-            <ul class="menu">
-                <li><a href="../index.html">Integração Science</a></li>
-            </ul>
-        </nav>
-    </div>
-    <br>
-    <h2>M Ó D U L O S - S C I E N C E</h2>
-    <br>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>MÓDULOS - SCIENCE</h2>
+    
     <div class="painel">
-        <br>
-        <img src="../img/tecnologia.jpg" id="tech">
-        <br>
-        <br>
-        <br>
-        <div class="teste">
-            <button id="Botaoemail" class="botao-linkhub">Tutorial e-mail</button>
-            <div class="estruturaTI">
-                <button id="Botaoestruturati" class="botao-linkhub">Estrutura T.I</button>
+        <div class="imgtec">
+            <img class="imgtec" src="../assets/img/tecnologia.jpg" id="tech">
+        </div>
+        
+        <div class="Botoes_grid">
+
+            <div class="Botoes">
+                <button id="Botaoemail" class="botaovideo">Tutorial e-mail</button>
             </div>
-            <div class="portalColaborador">
-                <button id="Botaoportalcolaborador" class="botao-linkhubcolaborador">Portal do Colaborador</button>
+
+            <div class="Botoes">
+                <button id="Botaoestruturati" class="botaovideo">Estrutura T.I</button>
             </div>
-            <div class="portalchamado">
-                <button id="Botaoportalchamado" class="botao-linkhub">Portal de Chamados</button>
+
+            <div class="Botoes">
+                <button id="Botaoportalcolaborador" class="botaovideo">Portal do Colaborador</button>
             </div>
+
+            <div class="Botoes">
+                <button id="Botaoportalchamado" class="botaovideo">Portal de Chamados</button>
+            </div>
+
         </div>
     </div>
     <script>
@@ -53,7 +65,7 @@
         };
 
         document.getElementById("Botaoportalchamado").onclick = function () {
-            window.location.href = "../treinamentotecnologia/TreinamentoTecnologia_PortalColaborador.html"
+            window.location.href = "../treinamentotecnologia/TreinamentoTecnologia_PortalChamado.html"
         };
     </script>
 </body>
