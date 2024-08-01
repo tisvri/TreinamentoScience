@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Curso</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/HeaderBaseFormulario.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/HeaderBaseFormulario.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
         <div class="menu_pagina">
             <div class="img_menu">
                 <a href="https://svriglobal.com/">
-                    <img class="logo" src="./assets/img/logo-science-valley.png" alt="Logo Science">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
                 </a>
             </div>
             <h2 id = "h2formulario">QUESTÕES</h2>
@@ -143,8 +143,7 @@
         </div>
         <br>
         <button type="submit" id="botaoverificar">Verificar</button>
-        <button type="button" id="finishButton" style="display: none;"
-            onclick="window.location.href='https://forms.office.com/r/1ji2V8H3Xp';">Finalizar</button>
+        <button type="button" id="finishButton" style="display: none;"></button>Finalizar</button>
     </form>
 
     <script>
@@ -218,6 +217,10 @@
             // Evite o envio do formulário
             return false;
         }
+
+        document.getElementById("finishButton").onclick = function () {
+            window.location.href = "TreinamentoTecnologia_PoloFormsSatisfacao.html";
+        };
     </script>
 </body>
 
