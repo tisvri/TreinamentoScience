@@ -27,7 +27,7 @@ document.getElementById("Botaotecnologiacentral").onclick = function () {
 };
 
 document.getElementById("Botaoqualidade").onclick = function () {
-    window.location.href = "../treinamentoqualidade/TreinamentoQualidade2.html";
+    window.location.href = "../treinamentoqualidade/TreinamentoQualidade.html";
 };
 
 document.getElementById("BotaoAcademy").onclick = function () {
