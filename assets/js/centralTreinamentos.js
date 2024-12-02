@@ -42,3 +42,6 @@ document.getElementById("BotaoFinanceiroPolo").onclick = function () {
     window.location.href = "../Treinamento_Financeiro_Polotrial/TreinamentoFinanceiroPolotrial_Aula1.html"
 };
 
+document.getElementById("BotaoSAP").onclick = function () {
+    window.location.href = "../treinamento_Sap/Sap.html"
+};
