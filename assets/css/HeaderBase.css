@@ -19,15 +19,15 @@
 }
 
 :root{
-    --cor-de-fundo: #041266;
+    --cor-de-fundo: #001C54;
     --cor-de-fonte: #FFFFFF;
-    --cor-do-titulo: #EC0E73;
+    --cor-do-titulo: #FF006F;
     --cor-branca: #FFFFFF;
     --preto85: #414140;
     --preto50: #8A8B8A;
     --preto: #000000;
     --fonte-principal: "Source Sans";
-    --fonte-secundaria: "BW Seido Raw"
+    --fonte-secundaria: "BW Seido Raw";
 }
 
 html,
@@ -48,21 +48,22 @@ body{
 }
 
 .menu_pagina{
-    background-color: var(--cor-branca);
-    padding: 10px;
+    background: #ffffff;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 20%, rgba(107, 63, 160, 1) 32%, rgba(107, 63, 160, 1) 80%, rgba(0, 0, 0, 1) 100%);
     height: 85px;
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 0;
 }
 
 .img_menu{
     margin-block: auto;
-    margin-top: 5px
+    margin-top: 0;
 }
 
 .logo{
+    margin-top: 10px;
     max-height: 100px;
-    height: 55px;
+    height: 65px;
     margin-left: 20px;
 }

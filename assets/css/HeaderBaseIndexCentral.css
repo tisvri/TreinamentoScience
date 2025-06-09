@@ -15,18 +15,22 @@ nav ul {
 }
 
 nav ul button{
-    border:  1px solid (--cor-branca);
-    background-color: #EC0E73;
+    font-size: 16px;
+    border:  2px solid black;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    background-color: #FF006F;
     padding: 5px 25px;
     cursor: pointer;
     margin-left: 30px;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 nav ul button:hover{
     transition: background, color 0.4s;
-    background: gray;
+    background: #001C54
+;
     color: white;
 }
 
@@ -55,4 +59,8 @@ nav ul button:hover{
 
 @media (max-width: 768px) {
     
+}
+
+.logo{
+    margin: 0;
 }

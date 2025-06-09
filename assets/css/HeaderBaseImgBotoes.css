@@ -1,13 +1,16 @@
 @import url('HeaderBaseTreinamentos.css');
 
 .imgtec{
+    border-radius: 30px;
+    border: 2px solid #6B3FA0;
+    box-shadow: 4px 4px black;
     margin: 0 auto;
-    height: 250px;
-    width: 350px;
+    height: 400px;
+    width: 650px;
 }
 
 .botaovideo{
-    width: 150px;
+    width: 250px;
 }
 
 /* Estiliza a grid de botões */
@@ -20,4 +23,11 @@
 
 .sistemas, .conteinerbotao {
     margin: 0 10px; /* Adiciona uma margem horizontal entre os botões */
+}
+
+p {
+    font-size: 36px;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    margin-right: 20%;
 }
