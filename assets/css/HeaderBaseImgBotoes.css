@@ -1,5 +1,9 @@
 @import url('HeaderBaseTreinamentos.css');
 
+*{
+    font-family: 'BW Seido Raw', sans-serif;
+}
+
 .imgtec{
     border-radius: 30px;
     border: 2px solid #6B3FA0;

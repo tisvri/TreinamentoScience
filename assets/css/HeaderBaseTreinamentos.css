@@ -1,124 +1,130 @@
-@import url('HeaderBase.css');
+@import url("sidebar.css");
 
-body{
-    font-size: 28px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../img/Fundo1.png");
+  background-color: #000c84;
 }
 
-header{
-    font-size: 20px;
-}
-ul{
-    list-style-type: none;
+.logo {
+  width: 100%;
 }
 
-.menu {
-    /* Defina display flex para alinhar os itens verticalmente */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.video-section {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.videoTreinamento {
+  width: 100%;
+  height: 601px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px black;
+}
+.lessons-section {
+  flex: 1;
+  background: #ffffff;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 713px;
+  overflow-y: auto;
+}
+
+.lessons-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.lesson {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lesson:hover {
+  background-color: #f0f0f0;
+}
+
+.lesson:last-child {
+  border-bottom: none;
+}
+
+.lesson-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.lesson-duration {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.menu_video {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px black;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mensagemInicial {
+  display: block;
+}
+
+.menu_video img {
+  height: 60px;
+}
+
+.menu_buttons a {
+  text-shadow: 1px 1px 1px black;
+  border-radius: 8px;
+  border: solid black 1px;
+  color: white !important;
+  display: flex;
+  flex-direction: row wrap;
+  gap: 10px;
+}
+
+.BtnMenu {
+  background-color: #ec0e73;
+  padding: 5px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
     display: flex;
-    /* Alinhe os itens verticalmente ao centro */
-    align-items: center;
-    /* Ajuste opcional para alinhar horizontalmente */
-    justify-content: center; /* ou flex-start ou flex-end, dependendo do layout desejado */
-}
+    flex-direction: column;
+  }
 
-.menu li {
-    
-    position: relative;
-    border-right: 1px solid #041266;
-}
+  .video-section {
+    margin-right: 0;
+  }
 
-.menu li a {
-    text-shadow: 1px 1px 2px black;
-    border: white;
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-}
-
-.menu li ul {
-    position: absolute;
-    left: 0;
-    background-color: #001C54;
-    display: none;
-    font-size: 14px;
-}
-
-.menu li:hover ul,
-.menu li.over ul {
-    text-shadow: 1px 1px 2px black;
-    margin: 0;
-    padding: 0;
-    display: block;
-}
-
-.menu li ul li {
-    border: 1px solid white;
-    margin-left: 0;
-    display: block;
-    width: 150px;
-}
-
-h2{
-    text-align: center;
-    box-shadow: 2px 2px 4px black;
-    text-shadow: 2px 2px 4px black;
-    border:  2px solid black;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 35px;
-    background-color: #6B3FA0;
-    
-}
-h3, p{
-    text-shadow: 2px 2px 4px black;
+  .lesson-title {
     text-align: center;
     margin-bottom: 10px;
+  }
 }
-
-.videoTreinamento{
-    display: block;
-    margin: 0 auto;
-    width: 780px;
-    height: 440px;
-    max-width: 1024px;
-    max-height: 768px;
-}
-
-.botaovideo{
-    border:  2px solid black;
-    text-shadow: 1px 1px 2px black;
-    padding: 5px 5px;
-    background-color: #FF006F;
-    color: #ffffff;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block; /* Para o elemento ocupar a largura total */
-    width: 200px; /* Defina um valor de largura adequado */
-    margin: 15px auto;
-
-}
-
-.botaovideo:hover{
-    transition: background, color 0.4s;
-    background: black;
-    color: white;
-}
-header h2{
-    color:#EC0E73;
-    padding-left: 20px;
-}
-
-p{
-    padding: 15px;
-}
-
-@media screen and (max-width: 550px){
-    ul{
-        padding-left: 20px;
-    }
-}
-

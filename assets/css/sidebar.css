@@ -1,58 +1,5 @@
-body {
-  background-image: url("../assets/img/Fundo1.png");
-  background-color: #000C84;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.div_main{
-  margin-left: 10%;
-  margin-right: 10%;
-  
-}
-h2 {
-    
-  color: white;
-  text-align: center;
-  box-shadow: 2px 2px 4px black;
-  text-shadow: 2px 2px 4px black;
-  border: 2px solid black;
-  margin: 0 auto 20px auto;
-  max-width: 400px;
-  border-radius: 35px;
-  background-color: #6b3fa0;
-  padding: 10px;
-}
-
-h4 {
-  color: white;
-  text-shadow: 2px 2px 4px black;
-  text-align: center;
-  margin: 30px 0 15px;
-}
-
-/* Vídeo responsivo */
-.video-youtube {
-  width: 100%;
-  max-width: 980px;
-  aspect-ratio: 16 / 9;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 2px 2px 5px black;
-
-  overflow: hidden;
-}
-
-.video-youtube iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Sidebar base */
 .sidebar {
-    box-shadow: 1px 1px 10px black;
+  box-shadow: 1px 1px 10px black;
   width: 70px;
   transition: width 0.3s ease;
   overflow-x: hidden;
@@ -86,7 +33,7 @@ a:active {
 
 .btn-sidebar {
   color: inherit;
-  text-decoration: none;    
+  text-decoration: none;
   display: block;
   width: 100%;
   color: transparent;
@@ -102,7 +49,6 @@ a:active {
   text-decoration: none;
 }
 
-/* Visível na expansão */
 .sidebar:hover .btn-sidebar,
 .sidebar.sidebar-expanded .btn-sidebar {
   color: white;
@@ -114,19 +60,18 @@ a:active {
 }
 
 .btn-sidebar:hover {
+
   background-color: #001c54;
   cursor: pointer;
   text-decoration: none;
 }
 
-/* Logo */
 .logo-img {
   width: 100%;
   max-width: 50px;
   transition: max-width 0.3s ease;
 }
 
-/* Expandir via hover em desktop */
 @media (min-width: 768px) {
   .sidebar:hover {
     width: 220px;
@@ -137,7 +82,6 @@ a:active {
   }
 }
 
-/* Expandir via botão em mobile */
 @media (max-width: 767px) {
   .sidebar-expanded {
     width: 220px !important;
@@ -152,7 +96,6 @@ a:active {
   }
 }
 
-/* Botão flutuante */
 .toggle-sidebar-btn {
   position: fixed;
   bottom: 20px;
