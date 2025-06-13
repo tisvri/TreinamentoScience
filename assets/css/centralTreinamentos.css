@@ -1,109 +1,100 @@
-@import url('sidebar.css');
+@import url("index.css");
 
-body {
-  background-image: url("/assets/img/Fundo1.png");
-  background-color: #001C54;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+main {
+  justify-content: center;
+  display: flex;
 }
 
-/* Título */
 h2 {
-    text-align: center;
-    box-shadow: 2px 2px 4px black;
-    text-shadow: 2px 2px 4px black;
-    border: 2px solid black;
-    margin: 20px auto;
-    border-radius: 35px;
-    background-color: #6B3FA0;
-    padding: 10px 20px;
-    color: white;
-    max-width: 500px;
+  text-align: center;
+  box-shadow: 2px 2px 4px black;
+  text-shadow: 2px 2px 4px black;
+  border: 2px solid black;
+  margin: 0 auto;
+  border-radius: 35px;
+  background-color: #6b3fa0;
+  padding: 10px 20px;
+  color: white;
+  max-width: 380px;
 }
 
-/* Grade de cursos */
-section#Cursos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    margin-bottom: 60px;
+.menu_video {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+#Cursos {
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+section {
+  text-shadow: 2px 2px 4px black;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  );
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .CursosList {
-    text-align: center;
+  text-align: center;
 }
 
 .CursosList img {
-    border-radius: 30px;
-    height: 300px;
-    width: 100%;
-    object-fit: fill;
-    margin-bottom: 10px;
-    border: 5px solid #6B3FA0;
-    box-shadow: 2px 2px black;
+  border-radius: 30px;
+  height: 250px;
+  width: 100%;
+  object-fit: fill;
+  margin: 0 auto;
+  border: 5px solid #6b3fa0;
+  box-shadow: 1px 1px 2px black;
+  transition: transform 0.3s ease; /* animação suave */
 }
 
 .CursosList img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05) translateY(-10px); /* aumenta e sobe 10px */
+  cursor: pointer; /* mostra que é clicável */
 }
 
 .CursosList h3 {
-    margin: 10px auto;
-    border-radius: 35px;
-    text-shadow: 2px 2px 4px black;
-    color: white;
-    padding: 5px 10px;
-    max-width: 80%;
+  color: white;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 35px;
+  text-shadow: 2px 2px 4px black;
+  margin: 0 auto;
+  margin-bottom: 12px;
 }
-
-
 
 @media (min-width: 768px) {
-    .sidebar:hover {
-        width: 220px;
-    }
+  .sidebar:hover {
+    width: 220px;
+  }
 
-    .sidebar:hover .logo-img {
-        max-width: 300px;
-    }
+  .sidebar:hover .logo-img {
+    max-width: 300px;
+  }
 }
-
 
 /* Conteúdo principal */
 main {
-    margin-left: 70px;
-    transition: margin-left 0.3s ease;
-    padding: 1rem;
+  margin-left: 70px;
+  transition: margin-left 0.3s ease;
+  padding: 1rem;
 }
 
 @media (max-width: 767px) {
-    section#Cursos {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    }
+  section#Cursos {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(280px, 1fr)
+    );
+  }
 
-    main {
-        margin-left: 0 !important;
-    }
-
-    /* Botão flutuante mobile */
-    #menuToggle {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #ff006f;
-        border: none;
-        border-radius: 50%;
-        width: 60px;
-        height: 60px;
-        color: white;
-        font-size: 24px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        z-index: 1100;
-    }
-
-    #menuToggle:hover {
-        background-color: #6b3fa0;
-    }
-}
+  main {
+    margin-left: 0 !important;
+  }

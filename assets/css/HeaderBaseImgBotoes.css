@@ -1,8 +1,22 @@
-@import url('HeaderBaseTreinamentos.css');
+@import url('index.css');
 
 *{
     font-family: 'BW Seido Raw', sans-serif;
 }
+
+.menu_video {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; ;
+    text-shadow: 1px 1px 1px black;
+}
+
 
 .imgtec{
     border-radius: 30px;

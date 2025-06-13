@@ -1,175 +1,193 @@
+@import url("HeaderBaseTreinamentos.css");
+
+main {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 body {
-  background-image: url("../assets/img/Fundo1.png");
-  background-color: #000C84;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-image: url("/assets/img/Fundo1.png");
+  background-color: #000c84;
 }
 
-.div_main{
-  margin-left: 10%;
-  margin-right: 10%;
-  
-}
-h2 {
-    
-  color: white;
-  text-align: center;
-  box-shadow: 2px 2px 4px black;
-  text-shadow: 2px 2px 4px black;
-  border: 2px solid black;
-  margin: 0 auto 20px auto;
-  max-width: 400px;
-  border-radius: 35px;
-  background-color: #6b3fa0;
-  padding: 10px;
+.video-section {
+  margin: 0 !important;
 }
 
-h4 {
-  color: white;
-  text-shadow: 2px 2px 4px black;
-  text-align: center;
-  margin: 30px 0 15px;
-}
-
-/* Vídeo responsivo */
-.video-youtube {
-  width: 100%;
-  max-width: 980px;
-  aspect-ratio: 16 / 9;
+.container {
   display: block;
-  margin: 0 auto;
-  box-shadow: 2px 2px 5px black;
-
-  overflow: hidden;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 !important;
+  width: 100%;
+  border-bottom: auto !important;
 }
 
-.video-youtube iframe {
+.logo {
+  width: 100%;
+}
+
+.menu_video {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 1px 2px 2px black;
+}
+
+.menu_title {
+  background-color: #ec0e73;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  color: white !important;
+  margin: 0 !important;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 22px;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+}
+
+.menu_buttons a {
+  background-color: #ec0e73;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  color: white !important;
+  padding: 5px 25px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu_buttons a:hover {
+  text-decoration: underline;
+}
+
+#mensagemInicial {
+  background: #6b3fa0;
+  border: 2px solid black;
+  border-radius: 35px;
+  box-shadow: 2px 2px 4px black;
+  color: white;
+  padding: 10px;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.videoTreinamento {
+  width: 100%;
+  max-width: 1040px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 8px;
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  display: block;
+}
+
+.video-youtube {
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* Sidebar base */
-.sidebar {
-    box-shadow: 1px 1px 10px black;
-  width: 70px;
-  transition: width 0.3s ease;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(107, 63, 160, 1) 50%,
-    rgba(107, 63, 160, 1) 70%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  scrollbar-width: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.sidebar::-webkit-scrollbar {
-  display: none;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
-.btn-sidebar {
-  color: inherit;
-  text-decoration: none;    
-  display: block;
-  width: 100%;
-  color: transparent;
-  background-color: #ff006f;
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-/* Visível na expansão */
-.sidebar:hover .btn-sidebar,
-.sidebar.sidebar-expanded .btn-sidebar {
-  color: white;
-  overflow: visible;
-  white-space: normal;
-  text-shadow: 1px 1px 2px black;
-  word-break: break-word;
-  text-decoration: none;
-}
-
-.btn-sidebar:hover {
-  background-color: #001c54;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* Logo */
-.logo-img {
-  width: 100%;
-  max-width: 50px;
-  transition: max-width 0.3s ease;
-}
-
-/* Expandir via hover em desktop */
-@media (min-width: 768px) {
-  .sidebar:hover {
-    width: 220px;
+/* Responsivo para tablets (largura até 1024px) */
+@media screen and (max-width: 1024px) {
+  .menu_video {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
 
-  .sidebar:hover .logo-img {
-    max-width: 300px;
+  .logo {
+    width: 100%;
+  }
+
+  .menu_buttons {
+    margin-top: 10px;
+  }
+
+  .videoTreinamento {
+    width: 90%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .menu_buttons a {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 }
 
-/* Expandir via botão em mobile */
-@media (max-width: 767px) {
-  .sidebar-expanded {
-    width: 220px !important;
+/* Responsivo para celulares (largura até 768px) */
+@media screen and (max-width: 768px) {
+  .menu_video {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
   }
 
-  .sidebar-expanded .logo-img {
-    max-width: 300px;
+  .logo {
+    width: 80%;
   }
 
-  main {
-    margin-left: 70px;
+  .menu_buttons a {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .videoTreinamento {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  span {
+    font-size: 1rem;
   }
 }
 
-/* Botão flutuante */
-.toggle-sidebar-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff006f;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  z-index: 10000;
-  transition: background-color 0.3s ease;
-}
+/* Adaptação para telas 4:3 */
+@media screen and (max-aspect-ratio: 4/3) {
+  .videoTreinamento {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
 
-.toggle-sidebar-btn:hover {
-  background-color: #6b3fa0;
-  cursor: pointer;
+  .menu_video {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }

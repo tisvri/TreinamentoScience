@@ -12,107 +12,97 @@
 </head>
 
 <body class="m-0">
-    <!-- Sidebar -->
-    <div class="sidebar bg-white text-white d-flex d-flex min-vh-100 flex-column align-items-center align-items-sm-start p-3">
-        <a href="https://svriglobal.com/" class="mb-4 w-100 text-center text-sm-start">
-            <img src="../assets/img/logo-science-valley.png" alt="Logo Science" class="img-fluid logo-img" />
-        </a>
+    <div class="container-fluid">
+        <!-- Seção do vídeo -->
+        <div class="video-section">
+            <div class="menu_video">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="../index.html">Home</a>
+                </div>
+                <div class="menu_buttons">
+                    <a class="BtnMenu"
+                        href="https://netorgft4487772.sharepoint.com/sites/ScienceValley/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FScienceValley%2FDocumentos%20Compartilhados%2FIntegra%C3%A7%C3%A3o%20Science%2FINTEGRA%C3%87%C3%83O%20CONTROLADORIA&p=true&ga=1">
+                        Integração Controladoria
+                    </a>
+                </div>
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="/politicas/politicasdone.html">Políticas e Diretrizes</a>
+                </div>
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="/integracaoti/IntegracaoTI.html">Integração Tecnologia</a>
+                </div>
+            </div>
 
-        <nav class="d-flex flex-column w-100">
-            <a href="../index.html">
-                <button class="btn btn-sidebar" id="Botaohubtreinamentos">Home</button>
-            </a>
-            <a
-                href="https://netorgft4487772.sharepoint.com/sites/ScienceValley/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FScienceValley%2FDocumentos%20Compartilhados%2FIntegra%C3%A7%C3%A3o%20Science%2FINTEGRA%C3%87%C3%83O%20CONTROLADORIA&p=true&ga=1">
-                <button class="btn btn-sidebar" id="Botaohubtreinamentos">Integração Controladoria</button>
-            </a>
-            <a href="politicas/politicasdone.html">
-                <button class="btn btn-sidebar" id="Botaohubtreinamentos">Políticas e Diretrizes</button>
-            </a>
-            <a href="integracaoti/IntegracaoTI.html">
-                <button class="btn btn-sidebar" id="Botaohubtreinamentos">Integração Tecnologia</button>
-            </a>
-        </nav>
+            <main class="flex-grow-1">
+                <!-- Envolvemos a seção de cursos em um container para centralização -->
+                <div class="container">
+                    <section id="Cursos">
+                        <div class="CursosList">
+                            <h3>LGPD</h3>
+                            <a href="../treinamentolgpd/TreinamentosLGPD.html">
+                                <img src="../assets/img/Central de Proteção de Dados - RD Station.jpg" alt="LGPD" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>CTMS</h3>
+                            <a href="../TreinamentoCtms/TreinamentoCtms.html">
+                                <img src="../assets/img/Integração de Cursos.jpg" alt="CTMS" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>Tecnologia</h3>
+                            <a href="../treinamentotecnologia/hubtecnologia.html">
+                                <img src="../assets/img/Redes de computadoras redes sociales _ Vector Premium.jpg"
+                                    alt="Tecnologia" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>Qualidade</h3>
+                            <a href="../treinamentoqualidade/TreinamentoQualidade.html">
+                                <img src="../assets/img/Free Vector _ Doctors concept illustration.jpg"
+                                    alt="Qualidade" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>Academy</h3>
+                            <a href="../treinamentoacademy/TreinamentoAcademy.html">
+                                <img src="../assets/img/Download free vector of Illustration of graphic design icon by Tang about pattern, layout artist, content icons, app, and application 297243.jpg"
+                                    alt="Academy" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>Pops</h3>
+                            <a href="../secao_pops/centralpops.html">
+                                <img src="../assets/img/Pops.png" alt="Pops" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>Financeiro</h3>
+                            <a href="../Treinamento_Financeiro_Polotrial/TreinamentoFinanceiroPolotrial_Aula1.html">
+                                <img src="../assets/img/FinanceiroPolo.jpg" alt="Financeiro" />
+                            </a>
+                        </div>
+
+                        <div class="CursosList">
+                            <h3>SAP</h3>
+                            <a href="../treinamento_Sap/Sap.html">
+                                <img src="../assets/img/SAP.jpg" alt="SAP" />
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
     </div>
-
-    <!-- Botão menu mobile -->
-    <button id="toggleSidebar" class="toggle-sidebar-btn d-md-none">☰</button>
-
-    <script>
-        const btn = document.getElementById('toggleSidebar');
-        const sidebar = document.querySelector('.sidebar');
-
-        btn.addEventListener('click', () => {
-            sidebar.classList.toggle('sidebar-expanded');
-        });
-    </script>
-
-
-    <!-- Conteúdo principal -->
-    <main class="flex-grow-1 p-4">
-        <h2>TREINAMENTOS SVRI</h2>
-        <section id="Cursos">
-            <div class="CursosList">
-                <h3>LGPD</h3>
-                <a href="../treinamentolgpd/TreinamentosLGPD.html">
-                    <img src="../assets/img/Central de Proteção de Dados - RD Station.jpg" alt="LGPD" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Plataforma CTMS</h3>
-                <a href="../TreinamentoCtms/TreinamentoCtms.html">
-                    <img src="../assets/img/Integração de Cursos.jpg" alt="CTMS" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Tecnologia</h3>
-                <a href="../treinamentotecnologia/hubtecnologia.html">
-                    <img src="../assets/img/Redes de computadoras redes sociales _ Vector Premium.jpg"
-                        alt="Tecnologia" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Qualidade</h3>
-                <a href="../treinamentoqualidade/TreinamentoQualidade.html">
-                    <img src="../assets/img/Free Vector _ Doctors concept illustration.jpg" alt="Qualidade" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Academy</h3>
-                <a href="../treinamentoacademy/TreinamentoAcademy.html">
-                    <img src="../assets/img/Download free vector of Illustration of graphic design icon by Tang about pattern, layout artist, content icons, app, and application 297243.jpg"
-                        alt="Academy" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Sessão de Pops</h3>
-                <a href="../secao_pops/centralpops.html">
-                    <img src="../assets/img/Pops.png" alt="Pops" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>Financeiro</h3>
-                <a href="../Treinamento_Financeiro_Polotrial/TreinamentoFinanceiroPolotrial_Aula1.html">
-                    <img src="../assets/img/FinanceiroPolo.jpg" alt="Financeiro" />
-                </a>
-            </div>
-
-            <div class="CursosList">
-                <h3>SAP</h3>
-                <a href="../treinamento_Sap/Sap.html">
-                    <img src="../assets/img/SAP.jpg" alt="SAP" />
-                </a>
-            </div>
-        </section>
-    </main>
-    </div>
-
 </body>
 
 </html>

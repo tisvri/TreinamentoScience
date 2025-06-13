@@ -11,41 +11,133 @@
 </head>
 
 <body>
-    <header>
-        <div class="menu_pagina">
-            <div class="img_menu">
-                <a href="https://svriglobal.com/">
-                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
-                </a>
+    <div class="container">
+        <!-- Seção do vídeo -->
+        <div class="video-section">
+            <div class="menu_video">
+                <a href="https://svriglobal.com/"><img class="logo" src="../assets/img/logo-science-valley.png"
+                        alt="Logo Science"></a>
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a>
+                </div>
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="TreinamentoLGPDformulario.html">Formulário Questões LGPD</a>
+                </div>
             </div>
-            <div class="opçoes">
-                <ul class="menu">
-                    <li><a href="../centraltreinamentos/centralTreinamentos.html">Painel de Treinamentos</a></li>
-                    <li><a href="#">Aulas</a>
-                        <ul>
-                            <li><a href="TreinamentoRegulatorio.html"> Áreas do sistema </a></li>
-                            <li><a href="TreinamentoRegulatorio2.html"> Mecanismo básico de troca de documentos </a></li>
-                            <li><a href="TreinamentoRegulatorio3.html"> Mudança de parametrização de fluxos de documentos </a></li>
-                            <li><a href="TreinamentoRegulatorio4.html"> Configurações pessoais </a></li>
-                            <li><a href="TreinamentoRegulatorio5.html"> Troca de documentos iniciais </a></li>
-                   </ul>
-                    </li>
-                </ul>
+
+            <div class="menu_video" id="mensagemInicial">
+                <h2>Utilize a barra lateral para acessar as aulas.</h2>
+                <p>Após concluir todas as aulas acesse a página do Formulário para emitir o certificado.</p>
+
+            </div>
+            <!-- Player fixo -->
+            <div class="videoTreinamento" id="videoContainer" style="display: none;">
+                <iframe id="videoPlayer" class="videoTreinamento" src="" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
 
-    </header>
-    <h2> TREINAMENTO - CTMS - REGULATÓRIO </h2>
-    <h3> Áreas do sistema </h3>
-        <div class="videoTreinamento">
-            <iframe class="videoTreinamento"
-            src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=8c3ad96b-72d4-49a5-b2f4-16f00f9916d5&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="1 CTMS Regulatório SVRI.mp4"></iframe></div> 
-        <button class="botaovideo" id="regulatorio-aula2">Mecanismo básico de troca de documentos</button>
-        <script>
-            document.getElementById("regulatorio-aula2").onclick = function () {
-                window.location.href = "TreinamentoRegulatorio2.html";
-            };
-        </script>
-</body>
+        <!-- Seção das aulas -->
+        <div class="lessons-section">
+            <h2>Lei Geral de Proteção de Dados</h2>
 
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=3925cfa1-f13a-4d34-9e5e-6421ade8e864&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 1: O que é a LGPD</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=2035fa41-c2c7-4804-9ad6-c2a75035db8f&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 2: Visão Geral da LGPD</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=5b0f9088-ffd5-4004-99d7-4d9b93550cd6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 3: O que é Dado Pessoal</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=b96555f5-cfaf-432a-b64c-2b02d57f69ea&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 4: Fundamentos da LGPD</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=4bd28d17-5994-4ba9-8b0d-fab2262095e8&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 5: Tratamento Legal de Dados Pessoais</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=aa0157d1-841c-4475-8fec-d94898b1d62c&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 6: Quais áreas tratam dados pessoais</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=2c79801a-4ae9-4954-9c85-5cfa17720e0a&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 7: As 10 Bases legais de tratamento de dados pessoais</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=7ad5bcd1-4b40-4b04-9937-f94dc2dd2bcb&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 8: Os 10 Princípios para Tratamento de Dados pessoais</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=4e90d8e0-4c7b-4165-af65-6b381c03b6e2&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 9: O Projeto LGPD na instituição</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=f5b0f446-f7cd-47b9-85eb-5d0e96b37714&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 10: O papel da liderança na conformidade à LGPD</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=9b39b6be-19a2-4ab9-b9f3-79b66231f852&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 11: A LGPD na sua vida pessoal e profissional</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=03ea5db9-3ca4-4226-b69b-c8aeae984602&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 12: O que fazer em um incidentes de tratamento de dados</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+            <div class="lesson"
+                data-video="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=e11a3904-e70b-4dd4-acc1-6999d1b060e7&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create">
+                <span class="lesson-title">Aula 13: Impactos da LGPD nos fornecedores da instituição</span><br>
+                <span class="lesson-duration">Duração: 9 minutos</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function alterarTexto() {
+            const titulo = document.querySelector("#mensagemInicial h2");
+            if (window.innerWidth <= 950) {
+                titulo.textContent = "Utilize a barra abaixo para acessar as aulas.";
+            } else {
+                titulo.textContent = "Utilize a barra lateral para acessar as aulas.";
+            }
+        }
+
+        window.addEventListener("load", alterarTexto);
+        window.addEventListener("resize", alterarTexto);
+
+        // Trocar vídeo dinamicamente
+        document.querySelectorAll(".lesson").forEach(lesson => {
+            lesson.addEventListener("click", function () {
+                const videoURL = this.getAttribute("data-video");
+
+                // Esconde a mensagem inicial e mostra o player
+                document.getElementById("mensagemInicial").style.display = "none";
+                document.getElementById("videoContainer").style.display = "block";
+
+                // Altera o vídeo
+                const player = document.getElementById("videoPlayer");
+                player.src = videoURL;
+            });
+        });
+    </script>
+</body>
 </html>
