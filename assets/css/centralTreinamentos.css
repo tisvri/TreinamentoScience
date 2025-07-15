@@ -2,18 +2,9 @@
 
 h2{
     text-align: center;
-    box-shadow: 2px 2px 4px black;
-    text-shadow: 2px 2px 4px black;
-    border:  2px solid black;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 35px;
-    background-color: #6B3FA0;
-    
 }
 
 section {
-    text-shadow: 2px 2px 4px black;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -26,30 +17,40 @@ section {
 }
 
 .CursosList img {
-    border-radius: 30px;
     height: 250px;
     width: 100%;
     object-fit: fill;
     margin-bottom: 10px;
-    border: 5px solid #6B3FA0;
-    box-shadow: 4px 4px black;
 }
 
 
 
 .CursosList h3 {
-    margin-left: 35%;
-    margin-right: 35%;
-    border-radius: 35px;
-    background-color: #6B3FA0;
     margin: 10px 0;
-    box-shadow: 2px 2px 4px black;
-    border: 2px solid black;
 }
 
 .CursosList button {
     margin-bottom: 10px;
 }
+
+.botaoAcesso{
+    padding: 5px 5px;
+    background-color: #EC0E73;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    display: block; /* Para o elemento ocupar a largura total */
+    width: 200px; /* Defina um valor de largura adequado */
+    margin: 15px auto;
+
+}
+
 
 @media screen and (max-width: 950px){
     .CursosList {

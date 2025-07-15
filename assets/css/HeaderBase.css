@@ -19,15 +19,15 @@
 }
 
 :root{
-    --cor-de-fundo: #001C54;
+    --cor-de-fundo: #CBCCCB;
     --cor-de-fonte: #FFFFFF;
-    --cor-do-titulo: #FF006F;
+    --cor-do-titulo: #EC0E73;
     --cor-branca: #FFFFFF;
     --preto85: #414140;
     --preto50: #8A8B8A;
     --preto: #000000;
     --fonte-principal: "Source Sans";
-    --fonte-secundaria: "BW Seido Raw";
+    --fonte-secundaria: "BW Seido Raw"
 }
 
 html,
@@ -37,33 +37,31 @@ body{
 }
 
 body{
-    background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);
     font-size: 32px;
     font-weight: 400;
-    color: var(--cor-de-fonte);
+    color: var(--preto85);
     margin: 0;
     justify-content: center;
     align-items: center;
 }
 
 .menu_pagina{
-    background: #ffffff;
-    background: linear-gradient(90deg,rgba(255, 255, 255, 1) 20%, rgba(107, 63, 160, 1) 32%, rgba(107, 63, 160, 1) 80%, rgba(0, 0, 0, 1) 100%);
+    background-color: var(--cor-branca);
+    padding: 10px;
     height: 85px;
     display: flex;
     align-items: center;
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 .img_menu{
     margin-block: auto;
-    margin-top: 0;
+    margin-top: 5px
 }
 
 .logo{
-    margin-top: 10px;
     max-height: 100px;
-    height: 65px;
+    height: 55px;
     margin-left: 20px;
 }

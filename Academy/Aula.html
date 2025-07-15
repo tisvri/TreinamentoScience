@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treinamento Academy</title>
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/Area_videos.css">
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: #cdcecd;
+      background-image: linear-gradient(to right, #cdcecd 0%, #ffffff 30%, #ffffff 70%, #cdcecd 100%);
+      background-image: url("../../../assets/img/Fundo.webp");
+      background-size: auto;
+      background-position: center;
+    }
+    a { text-decoration: none; }
+    .lesson { cursor: pointer; }
+    .pos_video a { margin-right: 10px; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="video-section">
+      <div class="menu_video">
+        <a href="https://svriglobal.com/"><img class="logo" src="../../../assets/img/logo-science-valley.png" alt="Logo Science"></a>
+        <div class="menu_buttons">
+          <a class="BtnMenu" href="../../../Central_Treinamentos.html">Painel de Treinamentos</a>
+        </div>
+      </div>
+
+      <iframe id="videoFrame"
+        src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=bc7f67ce-0900-4759-b6b8-b18d19fe6fcb"
+        frameborder="0" scrolling="no" allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="lessons-section">
+      <h2>Aula</h2>
+
+      <div class="lesson" data-src="https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=bc7f67ce-0900-4759-b6b8-b18d19fe6fcb&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"><span class="lesson-title">Pipeline</span><br><span class="lesson-duration">10 minutos</span></div>
+      <div class="lesson" data-src="../Academy/Formulario_Academy.html"><a href="../Academy/Formulario_Academy.html">Formulario<br>5 minutos</a></div>
+
+    </div>
+  </div>
+
+  <script>
+    const videoLinks = [
+        "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=bc7f67ce-0900-4759-b6b8-b18d19fe6fcb&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    ];
+
+    let currentIndex = 0;
+    const iframe = document.getElementById("videoFrame");
+    const btnAnterior = document.querySelector('.pos_video a[data-index="-1"]');
+    const btnProximo = document.querySelector('.pos_video a[data-index="1"]');
+
+    function updateButtons() {
+      btnAnterior.style.display = currentIndex === 0 ? "none" : "inline-block";
+
+      btnProximo.style.display = currentIndex === videoLinks.length - 1 ? "none" : "inline-block";
+    }
+
+    document.querySelectorAll(".lesson").forEach((el, index) => {
+      el.addEventListener("click", () => {
+        currentIndex = index;
+        iframe.src = videoLinks[currentIndex];
+        updateButtons();
+      });
+    });
+
+    document.querySelectorAll(".pos_video a").forEach(btn => {
+      btn.addEventListener("click", e => {
+        e.preventDefault();
+        const direction = parseInt(btn.dataset.index);
+        const newIndex = currentIndex + direction;
+        if (newIndex >= 0 && newIndex < videoLinks.length) {
+          currentIndex = newIndex;
+          iframe.src = videoLinks[currentIndex];
+          updateButtons();
+        }
+      });
+    });
+
+    // Inicializa os botões corretamente ao carregar a página
+    updateButtons();
+  </script>
+</body>
+</html>

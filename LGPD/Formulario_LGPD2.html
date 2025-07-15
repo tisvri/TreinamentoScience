@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário LGPD</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/Area_formulario.css">
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <style>
+    .Perguntas {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      min-height: 300px; /* Altere esse valor conforme necessário */
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+    .label{
+      text-align: justify;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+        <div class="video-section">
+            <div class="menu_video">
+                <a href="https://svriglobal.com/"><img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science"></a>
+                
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="../Central_Treinamentos.html">Painel de Treinamentos</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+  <form id="quizForm" onsubmit="return validateQuiz()">
+    <div class="conjunto" id="quizContainer" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;"></div>
+
+    <br>
+    <div class="botoes">
+      <button class="BtnMenu" type="submit" id="botaoverificar">Verificar</button>
+      <button class="BtnMenu" type="button" id="finishButton" style="display: none;">Finalizar</button>
+    </div>
+  </form>
+
+  <script>
+    const perguntas = [
+      {
+        enunciado: "O que é DPO?",
+        opcoes: ["CEO da empresa", "Todos os gestores", "Data Protection Officer ou encarregado de dados", "Gerente de TI"],
+        correta: 2
+      },
+      {
+        enunciado: "Qual o canal de ética / LGPD da Science?",
+        opcoes: ["eticalgpd@svriglobal.com", "sciencelgpd@svriglobal.com", "lgpd@svriglobal.com", "dpo@svriglobal.com"],
+        correta: 2
+      },
+      {
+        enunciado: "Para que serve o canal de ética?",
+        opcoes: [
+          "Software que monitora acessos",
+          "É uma ferramenta confidencial e segura para relatar ocorrências relacionadas à vulnerabilidades de segurança e acessos indevidos.",
+          "Sistema público de denúncias",
+          "É igual ao SAC"
+        ],
+        correta: 1
+      }, 
+      {
+        enunciado: "Como tratar os dados pessoais e sensíveis em conformidade à LGPD?",
+        opcoes: ["De maneira geral, sempre respeitando às regras da LGPD (Finalidade, Processo, Sentimento, Efeitos e Segurança) .", "De maneira geral, enviando um e-mail para a TI.", "Relatando a finalidade, processo, sentimento, efeitos e segurança para o comitê de ética.", "Relatando ás regras de LGPD para o gestor."],
+        correta: 0
+      },
+      {
+        enunciado: "Acesso, correção, eliminação, portabilidade, informações, revogação de consentimento, oposição ao tratamento, decisões automatizadas, compartilhamento, proteção e segurança são os direitos do titular dos dados para garantir a conformidade com a lgpd ?",
+        opcoes: ["Não", "Sim", "Não sei", "Talvez"],
+        correta: 1
+      }, 
+      {
+        enunciado: "Porque a LGPD tem impacto significativo sobre a contratação de fornecedores?",
+        opcoes: ["Por que as empresas que contratam fornecedores são limitadas (Ltda)", "Por que as empresas que contratam os fornecedores são titulares do dados", "Por que as empresas que contratam fornecedores são sociedade anônimas (S/A)", "Por que as empresas que contratam os fornecedores são controladores dos dados"],
+        correta: 3
+      }, 
+      {
+        enunciado: "Resumidamente, qual o papel da liderança na conformidade à LGPD?",
+        opcoes: ["Responsabilidade e Compartilhamento de dados", "Conscientização e Responsabilidade", "Responsabilidade de Rapidez", "Conscientização e Rapidez"],
+        correta: 1
+      }, 
+      {
+        enunciado: "Quais são os dados tratados pela empresa?",
+        opcoes: ["Presenciais e remotos", "Pessoais e normais", "Sensíveis e insensíveis", "Pessoais (ex:. nome, endereço, telefone) e Sensíveis ( ex: prontuário médico , fotos, biometria)"],
+        correta: 3
+      }, 
+      {
+        enunciado: " A empresa possui politica de privacidade e proteção de dados ? Está publicada no site svriglobal.com?",
+        opcoes: ["Não", "Sim", "Não sei", "Talvez"],
+        correta: 1
+      }, 
+      {
+        enunciado: "O que fazer em incidentes de tratamento de dados ?",
+        opcoes: ["Isolamento do incidente", "Notificação da ANPD", "Avaliação de Risco", "Todos os itens"],
+        correta: 3
+      },
+    ];
+
+    // Função para embaralhar array
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    // Renderizar perguntas
+    function renderizarQuiz() {
+      shuffle(perguntas); // Embaralha as perguntas
+      const container = document.getElementById("quizContainer");
+
+      perguntas.forEach((pergunta, index) => {
+        const opcoes = [...pergunta.opcoes];
+        shuffle(opcoes); // Embaralha alternativas
+
+        const div = document.createElement("div");
+        div.classList.add("Perguntas");
+        div.innerHTML = `<label>${index + 1}. ${pergunta.enunciado}</label><br><br>`;
+
+        opcoes.forEach((opcao, i) => {
+          div.innerHTML += `
+            <input type="radio" name="q${index}" value="${opcao}"> ${opcao}<br>
+          `;
+        });
+
+        container.appendChild(div);
+
+        // Salva resposta correta oculta
+        pergunta.opcoes_embaralhadas = opcoes;
+pergunta.resposta_certa_embaralhada = opcoes.indexOf(pergunta.opcoes[pergunta.correta]);        pergunta.resposta_certa_embaralhada = opcoes.indexOf(pergunta.opcoes[pergunta.correta]);      });
+    }
+
+    renderizarQuiz();
+
+    document.getElementById("quizForm").onsubmit = function (e) {
+      e.preventDefault();
+      let acertos = 0;
+
+      perguntas.forEach((pergunta, i) => {
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+        radios.forEach(radio => {
+          if (radio.checked) {
+            const respostaUsuario = radio.value;
+            const respostaCerta = pergunta.opcoes_embaralhadas[pergunta.resposta_certa_embaralhada];
+            if (respostaUsuario === respostaCerta) {
+              acertos++;
+            }
+          }
+        });
+      });
+
+      alert(`Você acertou ${acertos} de ${perguntas.length}`);
+
+      if (acertos >= Math.ceil(perguntas.length * 0.7)) {
+        document.getElementById("finishButton").style.display = "inline-block";
+      }
+    };
+
+    document.getElementById("finishButton").onclick = () => {
+      window.location.href = "./Certificado_LGPD.html";
+    };
+
+
+  </script>
+</body>
+</html>

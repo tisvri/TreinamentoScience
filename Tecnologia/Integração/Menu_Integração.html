@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Integração</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/HeaderBaseImgBotoes.css">
+    <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png"
+        type="image/x-icon">
+    <style>
+        body {
+        background-color: #cdcecd;
+        background-image: linear-gradient(to right, #cdcecd 0%, #ffffff 30%, #ffffff 70%, #cdcecd 100%);
+        background-image: url("../../../assets/img/Fundo.webp");
+        background-size: auto;
+        background-position: center;
+        }
+        a { text-decoration: none; }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        .card h2 {
+            font-size: 25px;    
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../../../Central_Treinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+            <h2>Integração Tecnologia</h2>
+        </div>
+    </header>
+
+    
+
+
+    <div class="container">
+        <div class="card">
+            <div class="imgtec">
+                <img class="imgtec" src="../../../assets/img/tecnologia.jpg" id="tech">
+            </div>
+            
+            <div class="Botoes_grid">
+
+                <div class="Botoes">
+                    <button id="BotaoTutoriais" class="botaovideo">Tutoriais</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="BotaoEstrutura" class="botaovideo">Estrutura T.I</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="BotaoPortalColab" class="botaovideo">PORTAL DO COLABORADOR</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="BotaoPortalchamado" class="botaovideo">PORTAL DE CHAMADO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("BotaoTutoriais").onclick = function () {
+            window.location.href = "../Integração/Tutoriais.html"
+        };
+
+        document.getElementById("BotaoEstrutura").onclick = function () {
+            window.location.href = "../Integração/Estrutura.html"
+        };
+
+        document.getElementById("BotaoPortalColab").onclick = function () {
+            window.location.href = "../Integração/Portal_Colaborador.html"
+        };
+
+        document.getElementById("BotaoPortalchamado").onclick = function () {
+            window.location.href = "../Integração/Portal_Chamado.html"
+        };
+    </script>
+</body>
+
+</html>

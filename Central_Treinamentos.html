@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+    <title>Treinamentos</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/centralTreinamentos.css">
+    <style>
+        body {
+            background-color: #cdcecd;
+            background-image: linear-gradient(to right,
+                    #cdcecd 0%,
+                    #ffffff 30%,
+                    #ffffff 70%,
+                    #cdcecd 100%);
+            background-image: url("assets/img/Fundo.webp");
+            background-size: auto;
+            /* Ou use: cover, auto, ou valores exatos */
+            background-repeat: no-repeat;
+            /* Evita que a imagem fique se repetindo */
+            background-position: center;
+            /* Centraliza a imagem */
+            padding: 2rem;
+            justify-content: center;
+        }
+
+        header {
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: scale-down;
+        }
+
+        .card h2 {
+            font-size: 25px;    
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <div class="itens_menu">
+                <nav>
+                    <p>TREINAMENTOS</p>
+                    <ul>
+                        <button id="BotaoHome" class="botao-link">Home</button>
+                        <button id="BotaoPolíticas_e_Diretrizes" class="botao-link">Políticas e Diretrizes </button>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Integração</h2>
+            <img src="../assets/img/integracao.png" alt="integracao">
+            <button id="BotaoIntegração_geral" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>LGPD</h2>
+            <img src="../assets/img/Central de Proteção de Dados - RD Station.jpg" alt="LGPD">
+            <button id="Botaolgpd" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>Tecnologia</h2>
+            <img src="../assets/img/Redes de computadoras redes sociales _ Vector Premium.jpg" alt="Tecnologia">
+            <button id="Botaotecnologiacentral" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>Qualidade</h2>
+            <img src="../assets/img/Qualidade.jpg" alt="Qualidade">
+            <button id="BotaoQualidade" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>Academy</h2>
+            <img src="../assets/img/Academy.jpg" alt="Academy">
+            <button id="BotaoAcademy" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>Sessão de Pops</h2>
+            <img src="../assets/img/Pops.png" alt="Sessão de Pops">
+            <button id="Botaopop" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <div class="card">
+            <h2>Financeiro</h2>
+            <img src="../assets/img/FinanceiroPolo.jpg" alt="Financeiro">
+            <button id="BotaoFinanceiroPolo" class="botaoAcesso">Acessar</button>
+        </div>
+
+        <!-- <div class="card">
+            <h2>Procedimentos Ti</h2>
+            <img src="../assets/img/Procedimentos Ti.webp" alt="Procedimentos Ti">
+            <button id="BotaoProceTi" class="botaoAcesso">Acessar</button>
+        </div> -->
+    </div>
+
+    <script>
+        document.getElementById('BotaoHome').onclick = () => {
+            window.location.href = "index.html";
+        };
+
+        document.getElementById('BotaoPolíticas_e_Diretrizes').onclick = () => {
+            window.location.href = "./Politicas_Diretrizes/Menu_Politicas.html";
+        };
+
+        document.getElementById('BotaoIntegração_geral').onclick = () => {
+            window.location.href = "./Integração/Menu_Integracao.html";
+        };
+        
+        document.getElementById('Botaolgpd').onclick = () => {
+            window.location.href = "./LGPD/Aula_1.html";
+        };
+
+        document.getElementById('Botaotecnologiacentral').onclick = () => {
+            window.location.href = "./Tecnologia/Menu_Tecnologia.html";
+        };
+
+        document.getElementById('BotaoQualidade').onclick = () => {
+            window.location.href = "./Qualidade/Aulas.html";
+        };
+
+        document.getElementById('BotaoAcademy').onclick = () => {
+            window.location.href = "./Academy/Aula.html";
+        };
+
+        document.getElementById('Botaopop').onclick = () => {
+            window.location.href = "./Sessao_Pops/Menu_Pops.html";
+        };
+
+        document.getElementById('BotaoFinanceiroPolo').onclick = () => {
+            window.location.href = "./Financeiro/Aulas.html";
+        };
+
+
+        // document.getElementById('BotaoProceTi').onclick = () => {
+        //     alert('Você clicou em Procedimentosda TI!');
+        // };
+    </script>
+</body>
+
+</html>
