@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Integração</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/HeaderBaseImgBotoes.css">
+    <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png"
+        type="image/x-icon">
+    <style>
+        body {
+        background-color: #cdcecd;
+        background-image: linear-gradient(to right, #cdcecd 0%, #ffffff 30%, #ffffff 70%, #cdcecd 100%);
+        background-image: url("../../../assets/img/Fundo.webp");
+        background-size: auto;
+        background-position: center;
+        }
+        a { text-decoration: none; }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            font-size: 25px;    
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .testo{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../Central_Treinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+
+    <div class="container">
+        <div class="card">
+            <div class="testo">
+                <p><b><i>integração</i></b></p>
+            </div>
+            
+            <div class="Botoes_grid">
+
+                <div class="Botoes">
+                    <button id="BotaoIntegração_Controladoria" class="botaovideo">Integração Controladoria</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="BotaoIntegração_Tecnologia" class="botaovideo">Integração Tecnologia</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('BotaoIntegração_Controladoria').onclick = () => {
+            window.location.href = "https://netorgft4487772.sharepoint.com/sites/ScienceValley/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fsites%2FScienceValley%2FDocumentos%20Compartilhados%2FIntegra%C3%A7%C3%A3o%20Science%2FINTEGRA%C3%87%C3%83O%20CONTROLADORIA&p=true&ga=1";
+        };
+
+        document.getElementById("BotaoIntegração_Tecnologia").onclick = function () {
+            window.location.href = "../Tecnologia/Integração/Menu_Integração.html"
+        };
+    </script>
+</body>
+
+</html>

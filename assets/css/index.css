@@ -1,169 +1,30 @@
-body {
-  background-image: url("../assets/img/Fundo1.png");
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+@import url('HeaderBaseIndexCentral.css');
+
+h2, h4{
+   
+    text-align: center;
 }
 
-h2 {
-    
-  color: white;
-  text-align: center;
-  box-shadow: 2px 2px 4px black;
-  text-shadow: 2px 2px 4px black;
-  border: 2px solid black;
-  margin: 0 auto 20px auto;
-  max-width: 400px;
-  border-radius: 35px;
-  background-color: #6b3fa0;
-  padding: 10px;
+.video-youtube {    
+    width: 80%;
+    /* width: 70%;*/
+    max-width: 800px;
+    height: 415px;
+    display: block;
+    margin-left: 5%;
+    margin: 0 auto;
 }
 
-h4 {
-  color: white;
-  text-shadow: 2px 2px 4px black;
-  text-align: center;
-  margin: 30px 0 15px;
-}
 
-/* Vídeo responsivo */
-.video-youtube {
-  width: 100%;
-  max-width: 980px;
-  aspect-ratio: 16 / 9;
-  display: block;
-  margin: 0 auto;
-  box-shadow: 2px 2px 5px black;
 
-  overflow: hidden;
-}
-
-.video-youtube iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* Sidebar base */
-.sidebar {
-    box-shadow: 1px 1px 10px black;
-  width: 70px;
-  transition: width 0.3s ease;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100vh;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 20%,
-    rgba(107, 63, 160, 1) 50%,
-    rgba(107, 63, 160, 1) 70%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  scrollbar-width: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-}
-
-.sidebar::-webkit-scrollbar {
-  display: none;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none !important;
-  color: inherit !important;
-}
-
-.btn-sidebar {
-  color: inherit;
-  text-decoration: none;    
-  display: block;
-  width: 100%;
-  color: transparent;
-  background-color: #ff006f;
-  border: 2px solid black;
-  border-radius: 15px;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  overflow: hidden;
-  text-decoration: none;
-}
-
-/* Visível na expansão */
-.sidebar:hover .btn-sidebar,
-.sidebar.sidebar-expanded .btn-sidebar {
-  color: white;
-  overflow: visible;
-  white-space: normal;
-  text-shadow: 1px 1px 2px black;
-  word-break: break-word;
-  text-decoration: none;
-}
-
-.btn-sidebar:hover {
-  background-color: #001c54;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-/* Logo */
-.logo-img {
-  width: 100%;
-  max-width: 50px;
-  transition: max-width 0.3s ease;
-}
-
-/* Expandir via hover em desktop */
-@media (min-width: 768px) {
-  .sidebar:hover {
-    width: 220px;
-  }
-
-  .sidebar:hover .logo-img {
-    max-width: 300px;
-  }
-}
-
-/* Expandir via botão em mobile */
-@media (max-width: 767px) {
-  .sidebar-expanded {
-    width: 220px !important;
-  }
-
-  .sidebar-expanded .logo-img {
-    max-width: 300px;
-  }
-
-  main {
-    margin-left: 70px;
-  }
-}
-
-/* Botão flutuante */
-.toggle-sidebar-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #ff006f;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  z-index: 10000;
-  transition: background-color 0.3s ease;
-}
-
-.toggle-sidebar-btn:hover {
-  background-color: #6b3fa0;
-  cursor: pointer;
+@media screen and (max-width: 700px){
+    iframe{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    nav ul li {
+        display:inline-flex;
+        margin-right: 20px;
+    }
 }

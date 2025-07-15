@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário - CTMS - REGULATÓRIO</title>
+  <link rel="stylesheet" type="text/css" href="../../../../../assets/css/Area_formulario.css">
+  <style>
+    .Perguntas {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      min-height: 300px; /* Altere esse valor conforme necessário */
+      box-sizing: border-box;
+      background-color: #fff;
+    }
+    .label{
+      text-align: justify;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+        <div class="video-section">
+            <div class="menu_video">
+                <a href="https://svriglobal.com/"><img class="logo" src="../../../../../assets/img/logo-science-valley.png" alt="Logo Science"></a>
+                
+                <div class="menu_buttons">
+                    <a class="BtnMenu" href="../../../../../Central_Treinamentos.html">Painel de Treinamentos</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+  <form id="quizForm" onsubmit="return validateQuiz()">
+    <div class="conjunto" id="quizContainer" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;"></div>
+
+    <br>
+    <div class="botoes">
+      <button class="BtnMenu" type="submit" id="botaoverificar">Verificar</button>
+      <button class="BtnMenu" type="button" id="finishButton" style="display: none;">Finalizar</button>
+    </div>
+  </form>
+
+  <script>
+    const perguntas = [
+      {
+        enunciado: "Qual a finalidade da plataforma CTMS regulatório?",
+        opcoes: ["Destina-se somente ao gerenciamento dos documentos", "Destina-se somente ao cadastro de estudos", "Destina-se a troca e ao gerenciamento de documentos", "Destina-se ao financeiro"],
+        correta: 2
+      },
+      {
+        enunciado: "Como podemos acessar a plataforma CTMS regulatório",
+        opcoes: ["Em posse de login e respectiva senha acessar via web", "Em posse de login e respectiva senha acessar via web", "Todas as alternativas estão corretas", "Em posse de um login e respectiva senha , acessar via web o portal do cliente ou colaborador no site corporativo da SVRI http://svriglobal.com ou direto :http://app.svriglobal.com/#"],
+        correta: 3
+      },
+      {
+        enunciado: "Na opção Painel de documentos, e após cadastrar o tipo de documento que serão trocados entre o patrocinador e a SVRI. Nessas trocas , as cores vermelho e verde representam qual status dos “uploads” ?",
+        opcoes: ["Cor vermelha, não foi feito ainda nenhum upload para o tipo de documento em relação à instituição – o Patrocinador / CRO está devendo.", "Cor verde, já foi feito pelo menos um upload para o tipo de documento em relação à instituição.", "Não há cores para o status de “uploads”", "Duas alternativas estão corretas"],
+        correta: 3
+      }, 
+      {
+        enunciado: "É possível criar e associar os acessos para o monitor ou gerente do patrocinador\CRO na plataforma sem que os cadastros estejam devidamente efetivados?",
+        opcoes: ["Não", "Sim"],
+        correta: 0
+      },
+      {
+        enunciado: "Em qual opção o usuário poderá trocar a senha ?",
+        opcoes: ["Cadastro de Estudos", "Usuários e poderes", "Painel de Documentos", "Cadastro básico"],
+        correta: 1
+      }, 
+      {
+        enunciado: "Plataforma Regulatório CTMS e Plataforma Regulatório Brasil , são as mesmas plataformas , trocam dados e são de propriedade da SVRI ?",
+        opcoes: ["Sim, foram desenvolvidos pela SVRi", "Sim, são plataformas integradas", "Não, uma foi desenvolvida pela SVRI e outra é do Governo", "Sim, são plataformas desenvolvidas pela SVRI"],
+        correta: 2
+      },
+    ];
+
+    // Função para embaralhar array
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+
+    // Renderizar perguntas
+    function renderizarQuiz() {
+      shuffle(perguntas); // Embaralha as perguntas
+      const container = document.getElementById("quizContainer");
+
+      perguntas.forEach((pergunta, index) => {
+        const opcoes = [...pergunta.opcoes];
+        shuffle(opcoes); // Embaralha alternativas
+
+        const div = document.createElement("div");
+        div.classList.add("Perguntas");
+        div.innerHTML = `<label>${index + 1}. ${pergunta.enunciado}</label><br><br>`;
+
+        opcoes.forEach((opcao, i) => {
+          div.innerHTML += `
+            <input type="radio" name="q${index}" value="${opcao}"> ${opcao}<br>
+          `;
+        });
+
+        container.appendChild(div);
+
+        // Salva resposta correta oculta
+        pergunta.opcoes_embaralhadas = opcoes;
+        pergunta.resposta_certa_embaralhada = opcoes.indexOf(pergunta.opcoes[pergunta.correta]);      });
+    }
+
+    renderizarQuiz();
+
+    document.getElementById("quizForm").onsubmit = function (e) {
+      e.preventDefault();
+      let acertos = 0;
+
+      perguntas.forEach((pergunta, i) => {
+        const radios = document.querySelectorAll(`input[name="q${i}"]`);
+        radios.forEach(radio => {
+          if (radio.checked) {
+            const respostaUsuario = radio.value;
+            const respostaCerta = pergunta.opcoes_embaralhadas[pergunta.resposta_certa_embaralhada];
+            if (respostaUsuario === respostaCerta) {
+              acertos++;
+            }
+          }
+        });
+      });
+
+      alert(`Você acertou ${acertos} de ${perguntas.length}`);
+
+      if (acertos >= Math.ceil(perguntas.length * 0.7)) {
+        document.getElementById("finishButton").style.display = "inline-block";
+      }
+    };
+
+    document.getElementById("finishButton").onclick = () => {
+      window.location.href = "./Certificado_Regulatorio.html";
+    };
+
+
+  </script>
+</body>
+</html>

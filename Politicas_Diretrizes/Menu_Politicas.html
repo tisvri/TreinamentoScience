@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Tecnologia</title>
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/HeaderBaseImgBotoes.css">
+    <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png"
+        type="image/x-icon">
+    <style>
+        body {
+        background-color: #cdcecd;
+        background-image: linear-gradient(to right, #cdcecd 0%, #ffffff 30%, #ffffff 70%, #cdcecd 100%);
+        background-image: url("../../../assets/img/Fundo.webp");
+        background-size: auto;
+        background-position: center;
+        }
+        a { text-decoration: none; }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            font-size: 25px;    
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .testo{
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu_pagina">
+            <div class="img_menu">
+                <a href="https://svriglobal.com/">
+                    <img class="logo" src="../assets/img/logo-science-valley.png" alt="Logo Science">
+                </a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../Central_Treinamentos.html">Painel de Treinamentos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+
+    <div class="container">
+        <div class="card">
+            <div class="testo">
+                <p>Caso seja a primeira vez que você esteja vendo as políticas, continue o fluxo normalmente.
+                    Após o término da leitura, vá para a <b><i>integração tecnologia</i></b>
+                </p>
+
+                <p>Se você só precisa se atualizar em relação as políticas, leia e finalize a integração com o
+                    <b><i>formulário</i></b>
+                </p>
+            </div>
+            
+            <div class="Botoes_grid">
+
+                <div class="Botoes">
+                    <button id="Botaodiretrizes" class="botaovideo">Políticas e Diretrizes</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="BotaoCodigoConduta" class="botaovideo">Código de Conduta e Ética</button>
+                </div>
+
+                <div class="Botoes">
+                    <button id="Botaoformdiretrizes" class="botaovideo">Formulário a integração</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("Botaodiretrizes").onclick = function () {
+            window.location.href = "https://netorgft4487772.sharepoint.com/:f:/s/ScienceValley/EkJmpZ2uovJCsakM2u6JaUAB1BdrWDbTg8QhPpectsSdVw?e=KShpK4"
+        };
+
+        document.getElementById("BotaoCodigoConduta").onclick = function () {
+            window.location.href = "../Politicas_Diretrizes/Codigodeconduta.html"
+        };
+
+        document.getElementById("Botaoformdiretrizes").onclick = function () {
+            window.location.href = "../Politicas_Diretrizes/Arquivo_Politica.html"
+        };
+    </script>
+</body>
+
+</html>
