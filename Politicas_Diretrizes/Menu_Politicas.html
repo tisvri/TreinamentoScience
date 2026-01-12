@@ -22,7 +22,7 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 600px;
+            width: 800px;
             text-align: center;
             overflow: hidden;
         }
@@ -46,6 +46,10 @@
         }
         .testo{
             text-align: justify;
+        }
+        .botaovideo{
+            width: 180px;
+            height: 50px;
         }
     </style>
 </head>
@@ -92,6 +96,10 @@
                 </div>
 
                 <div class="Botoes">
+                    <button id="BotaoFraudes" class="botaovideo">Termo de Prevenção a Fraudes</button>
+                </div>
+
+                <div class="Botoes">
                     <button id="Botaoformdiretrizes" class="botaovideo">Formulário a integração</button>
                 </div>
 
@@ -105,6 +113,10 @@
 
         document.getElementById("BotaoCodigoConduta").onclick = function () {
             window.location.href = "../Politicas_Diretrizes/Codigodeconduta.html"
+        };
+
+        document.getElementById("BotaoFraudes").onclick = function () {
+            window.location.href = "../Politicas_Diretrizes/Termo_de_Ciência_e_Concordância.html"
         };
 
         document.getElementById("Botaoformdiretrizes").onclick = function () {
