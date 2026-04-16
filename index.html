@@ -7,6 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/HeaderBaseImgBotoes.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+    <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png"
+        type="image/x-icon">
     <style>
         body {
         background-color: #cdcecd;
@@ -91,12 +93,20 @@
                     <button id="BotaoAcessos" class="botaovideo">Treinamentos Science</button>
                 </div>
 
+                <div class="Botoes">
+                    <button id="BotaoPolíticas_e_Diretrizes" class="botaovideo">Políticas e Diretrizes</button>
+                </div>
+
             </div>
         </div>
     </div>
     <script>
         document.getElementById("BotaoAcessos").onclick = function () {
             window.location.href = "Central_Treinamentos.html"
+        };
+
+        document.getElementById('BotaoPolíticas_e_Diretrizes').onclick = () => {
+            window.location.href = "./Politicas_Diretrizes/Menu_Politicas.html";
         };
 
     </script>
