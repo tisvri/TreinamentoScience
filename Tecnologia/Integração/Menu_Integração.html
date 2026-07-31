@@ -27,8 +27,11 @@
             overflow: hidden;
         }
 
-        .card img {
-            width: 100%;
+        /* Imagem Tecnologia.png diminuída */
+        .card img#tech {
+            width: 200px;       /* ajuste esse valor ao tamanho desejado */
+            max-width: 100%;
+            height: auto;
             object-fit: cover;
             margin-top: 20px;
         }
@@ -43,6 +46,15 @@
             justify-content: center;
             gap: 20px;
             padding: 20px;
+        }
+
+        /* Estilo do vídeo de segurança da informação */
+        .video-seguranca {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto 30px auto;
+            display: block;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -63,9 +75,6 @@
             <h2>Integração Tecnologia</h2>
         </div>
     </header>
-
-    
-
 
     <div class="container">
         <div class="card">
@@ -91,6 +100,15 @@
                     <button id="BotaoPortalchamado" class="botaovideo">PORTAL DE CHAMADO</button>
                 </div> -->
             </div>
+
+            <!-- Vídeo de instruções sobre práticas de segurança da informação -->
+            <div class="video-wrapper">
+                <video class="video-seguranca" controls>
+                    <source src="../../assets/Explainer_Video.mp4" type="video/mp4">
+                    Seu navegador não suporta a exibição de vídeos.
+                </video>
+            </div>
+
         </div>
     </div>
     <script>
