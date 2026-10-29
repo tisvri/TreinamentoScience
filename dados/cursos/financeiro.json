@@ -1,0 +1,28 @@
+{
+  "id": "financeiro",
+  "titulo": "Financeiro",
+  "area": "financeiro",
+  "aulas": [
+    {
+      "titulo": "Aula 1: Gestão Financeira",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=27d28b08-1b7c-4dda-9928-19962503ee3f"
+    },
+    {
+      "titulo": "Aula 2: Protocolos",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=deadb7b5-87dd-4773-9726-0e9ef2b8e7a0"
+    },
+    {
+      "titulo": "Aula 3: Distribuição de Pagamentos (Repasse médico)",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=03edf42c-a571-49fd-9c63-37a0d09565ec"
+    },
+    {
+      "titulo": "Políticas",
+      "duracao": "",
+      "tipo": "documento",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=fa9eb13c-9151-432e-bfda-1c21e0fb30b8"
+    }
+  ]
+}

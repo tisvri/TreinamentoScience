@@ -1,0 +1,23 @@
+{
+  "id": "sap",
+  "titulo": "Treinamento SAP",
+  "area": "tecnologia",
+  "aulas": [
+    {
+      "titulo": "SAP Business One",
+      "duracao": "10 minutos",
+      "video": "https://drive.google.com/file/d/1W8hRdok9ASCNr8Y_p7V_tw6qZrTD3o3r/preview"
+    }
+  ],
+  "material": [
+    {
+      "texto": "Plataforma de treinamento Ramo",
+      "url": "https://www.ramotreinamentos.com/academiaramo"
+    },
+    {
+      "texto": "Ecossistema Ramo",
+      "url": "https://linktr.ee/customerexperienceramo"
+    }
+  ],
+  "certificado": true
+}

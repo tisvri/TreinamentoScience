@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificado</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/certificado.css">
+</head>
+
+<body>
+
+  <header id="menu-global" class="no-print"></header>
+
+  <div class="cert-container">
+
+    <!-- Ações (não sai no PDF) -->
+    <div class="cert-acoes no-print">
+      <a href="/paginas/cursos.html" class="btn-voltar">← Voltar ao catálogo</a>
+      <button class="btn-baixar" id="btnBaixar">📥 Baixar PDF</button>
+    </div>
+
+    <!-- O certificado em si -->
+    <div class="certificado" id="certificado">
+      <div class="cert-borda">
+        <div class="cert-conteudo">
+
+          <div class="cert-topo">
+            <img src="/assets/img/logo-science-valley.png" alt="Science Valley" class="cert-logo">
+          </div>
+
+          <h1 class="cert-titulo">Certificado</h1>
+          <p class="cert-subtitulo">de conclusão de curso</p>
+
+          <p class="cert-texto">Certificamos que</p>
+          <p class="cert-nome" id="certNome">Carregando...</p>
+          <p class="cert-texto">concluiu com êxito o treinamento</p>
+          <p class="cert-curso" id="certCurso">Carregando...</p>
+
+          <div class="cert-meta">
+            <div class="cert-meta-item">
+              <span class="cert-meta-label">Aproveitamento</span>
+              <span class="cert-meta-valor" id="certNota">—</span>
+            </div>
+            <div class="cert-meta-item">
+              <span class="cert-meta-label">Data de emissão</span>
+              <span class="cert-meta-valor" id="certData">—</span>
+            </div>
+            <div class="cert-meta-item">
+              <span class="cert-meta-label">Código de verificação</span>
+              <span class="cert-meta-valor cert-codigo" id="certCodigo">—</span>
+            </div>
+          </div>
+
+          <div class="cert-rodape">
+            <div class="cert-linha"></div>
+            <p class="cert-assinatura">Science Valley Research Institute</p>
+            <p class="cert-verificacao">Verifique a autenticidade em <strong>treinamento.svriglobal.com/verificar</strong></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="certErro" class="cert-erro no-print" style="display:none;"></div>
+
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/certificado.js"></script>
+</body>
+</html>

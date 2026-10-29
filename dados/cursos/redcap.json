@@ -1,0 +1,16 @@
+{
+  "id": "redcap",
+  "titulo": "Treinamento de Redcap",
+  "area": "tecnologia",
+  "aulas": [
+    {
+      "titulo": "Criação de Projetos",
+      "duracao": "10 minutos",
+      "video": "/assets/video/redcap.mp4"
+    }
+],
+"material": {
+  "texto": "Abrir manual (PDF)",
+  "url": "/conteudo/tecnologia/plataformas/redcap/manual.pdf"
+}
+}

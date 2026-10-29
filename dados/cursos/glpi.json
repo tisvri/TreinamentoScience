@@ -1,0 +1,16 @@
+{
+  "id": "glpi",
+  "titulo": "Treinamento GLPI",
+  "area": "tecnologia",
+  "aulas": [
+    {
+      "titulo": "Tutorial GLPI",
+      "duracao": "5 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=1bf2a934-8fe7-4f2a-8325-59b1532bb7f5"
+    }
+  ],
+  "material": {
+    "texto": "Acessar GLPI",
+    "url": "https://glpi.svriglobal.com/"
+  }
+}

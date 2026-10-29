@@ -1,0 +1,12 @@
+{
+  "itens": [
+    { "label": "Início", "href": "/paginas/inicio.html" },
+    { "label": "Primeiros Passos", "href": "/paginas/primeiros-passos.html" },
+    { "label": "Catálogo", "href": "/paginas/cursos.html" },
+    { "label": "Políticas", "href": "/paginas/politicas.html" },
+    { "label": "Manuais", "href": "/paginas/manuais.html" },
+    { "label": "Painel", "href": "/paginas/painel-gestor.html" },
+    { "label": "Admin", "href": "/paginas/admin.html" },
+    { "label": "Meu Perfil", "href": "/paginas/meu-perfil.html" }
+  ]
+}

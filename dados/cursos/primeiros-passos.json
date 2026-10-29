@@ -1,0 +1,68 @@
+{
+  "id": "primeiros-passos",
+  "titulo": "Primeiros Passos",
+  "area": "Onboarding",
+  "secoes": [
+     {
+      "titulo": "Tutoriais",
+      "aulas": [
+        {
+          "titulo": "Aula 1: Primeiro Acesso",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=54b23e88-44da-489a-9e08-180978acffd9"
+        },
+        {
+          "titulo": "Aula 2: Assinatura webmail",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=fb0d992e-6c46-4191-8645-aa11fe0f8967"
+        },
+        {
+          "titulo": "Aula 3: Assinatura Outlook",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=c6c3261d-e267-4387-b2e7-fa94c714c42a"
+        }
+      ]
+    },
+    {
+      "titulo": "Portal do Colaborador",
+      "aulas": [
+        {
+          "titulo": "Aula 1: Acesso e visão geral",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=78125c60-4b28-49ca-b673-ce7b534858ae"
+        },
+        {
+          "titulo": "Aula 2: Alteração de senha",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=17522a01-bbb4-4e73-963f-e5d16373cd1d"
+        }
+      ]
+    },
+    {
+      "titulo": "Segurança da Informação e Uso de IA",
+      "aulas": [
+        {
+          "titulo": "Política de Segurança da Informação",
+          "duracao": "10 minutos",
+          "video": "/assets/video/explainer.mp4"
+        },
+        {
+          "titulo": "Política de Uso de IA",
+          "duracao": "10 minutos",
+          "video": "/assets/video/politica-ia-science.mp4"
+        }
+      ]
+    }
+    
+  ],
+    "material": [
+    {
+      "texto": "Faça o Treinamento do Portal de Chamados (GLPI)",
+      "url": "/conteudo/tecnologia/plataformas/glpi/aula.html"
+    },
+    {
+      "texto": "Leia as Políticas Oficiais",
+      "url": "/paginas/politicas.html"
+    }
+  ]
+}

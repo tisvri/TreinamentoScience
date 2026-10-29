@@ -1,0 +1,38 @@
+{
+  "setores": [
+    {
+      "id": "ti",
+      "nome": "TI",
+      "sub": [
+        { "id": "infraestrutura", "nome": "Infraestrutura" },
+        { "id": "negocios", "nome": "Negócios" },
+        { "id": "business-intelligence", "nome": "Business Intelligence" }
+      ]
+    },
+    {
+      "id": "pesquisa-clinica",
+      "nome": "Pesquisa Clínica",
+      "sub": [
+        { "id": "qualidade", "nome": "Qualidade" },
+        { "id": "campo", "nome": "Campo" },
+        { "id": "nap", "nome": "NAP" }
+      ]
+    },
+    {
+      "id": "financeiro",
+      "nome": "Financeiro",
+      "sub": [
+        { "id": "contas-a-pagar", "nome": "Contas a Pagar" },
+        { "id": "contas-a-receber", "nome": "Contas a Receber" }
+      ]
+    },
+    { "id": "feasibility", "nome": "Feasibility" },
+    { "id": "compliance", "nome": "Governança e Compliance" },
+    { "id": "capital-humano", "nome": "Capital Humano" },
+    { "id": "facilities", "nome": "Facilities" },
+    { "id": "marketing", "nome": "Marketing" },
+    { "id": "biotech", "nome": "Biotech" },
+    { "id": "juridico", "nome": "Jurídico" },
+     { "id": "assessoria-executiva", "nome": "Assessoria Executiva" }
+  ]
+}

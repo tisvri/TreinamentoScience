@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avaliação</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/avaliacao.css">
+</head>
+
+<body>
+
+  <header id="menu-global"></header>
+
+  <div class="avaliacao-container">
+
+    <div class="avaliacao-header">
+      <span class="avaliacao-etiqueta">Avaliação</span>
+      <h1 id="tituloAvaliacao">Carregando...</h1>
+      <p id="subtituloAvaliacao"></p>
+    </div>
+
+    <form id="formAvaliacao">
+      <div id="perguntasContainer"></div>
+
+      <div class="avaliacao-acoes">
+        <button type="submit" class="btn-primario" id="btnVerificar">Verificar respostas</button>
+        <a class="btn-secundario" id="btnCertificado" href="#" style="display:none;">Ir para o certificado →</a>
+        <button type="button" class="btn-secundario" id="btnRefazer" style="display:none;">Tentar novamente</button>
+      </div>
+    </form>
+
+    <div class="avaliacao-resultado" id="resultado" style="display:none;"></div>
+
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/avaliacao.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+{
+  "id": "lgpd",
+  "titulo": "LGPD",
+  "area": "Compliance",
+  "aulas": [
+    {
+      "titulo": "Aula 1: O que é a Lei Geral de Proteção de Dados LGPD",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=3925cfa1-f13a-4d34-9e5e-6421ade8e864"
+    },
+    {
+      "titulo": "Aula 2: Visão Geral da Lei Geral de Proteção de Dados",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=2035fa41-c2c7-4804-9ad6-c2a75035db8f"
+    },
+    {
+      "titulo": "Aula 3: O que é Dado Pessoal",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=5b0f9088-ffd5-4004-99d7-4d9b93550cd6"
+    },
+    {
+      "titulo": "Aula 4: Fundamentos da LGPD",
+      "duracao": "12 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=b96555f5-cfaf-432a-b64c-2b02d57f69ea"
+    },
+    {
+      "titulo": "Aula 5: Tratamento Legal de Dados Pessoais",
+      "duracao": "17 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=4bd28d17-5994-4ba9-8b0d-fab2262095e8"
+    },
+    {
+      "titulo": "Aula 6: Quais áreas tratam dados pessoais",
+      "duracao": "9 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=aa0157d1-841c-4475-8fec-d94898b1d62c"
+    },
+    {
+      "titulo": "Aula 7: As 10 Bases legais de tratamento de dados pessoais",
+      "duracao": "12 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=2c79801a-4ae9-4954-9c85-5cfa17720e0a"
+    },
+    {
+      "titulo": "Aula 8: Os 10 Princípios para Tratamento de Dados pessoais",
+      "duracao": "13 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=7ad5bcd1-4b40-4b04-9937-f94dc2dd2bcb"
+    },
+    {
+      "titulo": "Aula 9: O Projeto LGPD na instituição",
+      "duracao": "8 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=4e90d8e0-4c7b-4165-af65-6b381c03b6e2"
+    },
+    {
+      "titulo": "Aula 10: O papel da liderança na conformidade à LGPD",
+      "duracao": "11 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=f5b0f446-f7cd-47b9-85eb-5d0e96b37714"
+    },
+    {
+      "titulo": "Aula 11: A LGPD na sua vida pessoal e profissional",
+      "duracao": "9 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=9b39b6be-19a2-4ab9-b9f3-79b66231f852"
+    },
+    {
+      "titulo": "Aula 12: O que fazer em um incidentes de tratamento de dados",
+      "duracao": "13 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=03ea5db9-3ca4-4226-b69b-c8aeae984602"
+    },
+    {
+      "titulo": "Aula 13: Impactos da LGPD nos fornecedores da instituição",
+      "duracao": "8 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=e11a3904-e70b-4dd4-acc1-6999d1b060e7"
+    }
+  ],
+  "avaliacao": {
+    "notaMinima": 70,
+    "perguntas": [
+      {
+        "enunciado": "Para que serve o canal de ética?",
+        "opcoes": [
+          "Sistema público de denúncias",
+          "É igual ao SAC",
+          "Software que monitora acessos",
+          "É uma ferramenta confidencial e segura para relatar ocorrências relacionadas à vulnerabilidades de segurança e acessos indevidos."
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "O que é DPO?",
+        "opcoes": [
+          "Data Protection Officer ou encarregado de dados",
+          "CEO da empresa",
+          "Todos os gestores",
+          "Gerente de TI"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "Como tratar os dados pessoais e sensíveis em conformidade à LGPD?",
+        "opcoes": [
+          "Relatando às regras de LGPD para o gestor.",
+          "Relatando a finalidade, processo, sentimento, efeitos e segurança para o comitê de ética.",
+          "De maneira geral, enviando um e-mail para a TI.",
+          "De maneira geral, sempre respeitando às regras da LGPD (Finalidade, Processo, Sentimento, Efeitos e Segurança)."
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "Resumidamente, qual o papel da liderança na conformidade à LGPD?",
+        "opcoes": [
+          "Conscientização e Responsabilidade",
+          "Responsabilidade e Compartilhamento de dados",
+          "Responsabilidade de Rapidez",
+          "Conscientização e Rapidez"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "Acesso, correção, eliminação, portabilidade, informações, revogação de consentimento, oposição ao tratamento, decisões automatizadas, compartilhamento, proteção e segurança são os direitos do titular dos dados para garantir a conformidade com a LGPD?",
+        "opcoes": ["Talvez", "Não", "Sim", "Não sei"],
+        "correta": 2
+      },
+      {
+        "enunciado": "Qual o canal de ética / LGPD da Science?",
+        "opcoes": [
+          "eticalgpd@svriglobal.com",
+          "lgpd@svriglobal.com",
+          "sciencelgpd@svriglobal.com",
+          "dpo@svriglobal.com"
+        ],
+        "correta": 1
+      },
+      {
+        "enunciado": "O que fazer em incidentes de tratamento de dados?",
+        "opcoes": [
+          "Todos os itens",
+          "Notificação da ANPD",
+          "Avaliação de Risco",
+          "Isolamento do incidente"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "Quais são os dados tratados pela empresa?",
+        "opcoes": [
+          "Pessoais (ex: nome, endereço, telefone) e Sensíveis (ex: prontuário médico, fotos, biometria)",
+          "Sensíveis e insensíveis",
+          "Pessoais e normais",
+          "Presenciais e remotos"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "A empresa possui política de privacidade e proteção de dados? Está publicada no site svriglobal.com?",
+        "opcoes": ["Sim", "Talvez", "Não sei", "Não"],
+        "correta": 0
+      },
+      {
+        "enunciado": "Porque a LGPD tem impacto significativo sobre a contratação de fornecedores?",
+        "opcoes": [
+          "Por que as empresas que contratam os fornecedores são titulares dos dados",
+          "Por que as empresas que contratam fornecedores são sociedades anônimas (S/A)",
+          "Por que as empresas que contratam fornecedores são limitadas (Ltda)",
+          "Por que as empresas que contratam os fornecedores são controladores dos dados"
+        ],
+        "correta": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "politicas": [
+    {
+      "id": "codigo-conduta",
+      "titulo": "Código de Conduta",
+      "tipo": "Política",
+      "categoria": "compliance",
+      "area": "Governança e Compliance",
+      "versao": "1.0",
+      "data": "2026-01-15",
+      "arquivo": "/conteudo/compliance/codigo-conduta/politica.html"
+    },
+    {
+      "id": "politica-ia",
+      "titulo": "Política de Uso de IA",
+      "tipo": "Política",
+      "categoria": "Tecnologia da informação",
+      "area": "Tecnologia da Informação",
+      "versao": "1.0",
+      "data": "2026-01-10",
+      "arquivo": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/Documentos%20Compartilhados/Forms/AllItems.aspx?viewid=ca37a863%2D92c1%2D49c9%2Dbf0b%2Df816bd28160f&id=%2Fsites%2FScienceValley%2FDocumentos%20Compartilhados%2FIntegra%C3%A7%C3%A3o%20Science%2FINTEGRA%C3%87%C3%83O%20POL%C3%8DTICAS%20E%20DIRETRIZES%2FPol%C3%ADticas%20TI%2F007%20%2D%20Politica%5Fde%5Fuso%20de%20IA%2Epdf&parent=%2Fsites%2FScienceValley%2FDocumentos%20Compartilhados%2FIntegra%C3%A7%C3%A3o%20Science%2FINTEGRA%C3%87%C3%83O%20POL%C3%8DTICAS%20E%20DIRETRIZES%2FPol%C3%ADticas%20TI"
+    },
+    {
+      "id": "termo-ciencia",
+      "titulo": "Termo de Ciência e Concordância",
+      "tipo": "Termo",
+      "categoria": "compliance",
+      "area": "Governança e Compliance",
+      "versao": "1.0",
+      "data": "2026-01-05",
+      "arquivo": "/conteudo/compliance/termo-ciencia/politica.html"
+    },
+    {
+      "id": "codigo-etica",
+      "titulo": "COLE AQUI O TÍTULO",
+      "tipo": "Política",
+      "categoria": "capital-humano",
+      "area": "Capital Humano",
+      "versao": "1.0",
+      "data": "2026-01-01",
+      "arquivo": "COLE AQUI O LINK"
+    },
+    {
+      "id": "home-office",
+      "titulo": "COLE AQUI O TÍTULO",
+      "tipo": "Política",
+      "categoria": "capital-humano",
+      "area": "Capital Humano",
+      "versao": "1.0",
+      "data": "2026-01-01",
+      "arquivo": "COLE AQUI O LINK"
+    }
+  ]
+}

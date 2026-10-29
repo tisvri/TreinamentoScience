@@ -1,0 +1,176 @@
+/* =============================================================
+   Página de verificação de certificado
+   ============================================================= */
+
+.verificar-container {
+  max-width: 640px;
+  margin: 60px auto 80px auto;
+  padding: 0 20px;
+}
+
+.verificar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.verificar-header h1 {
+  color: #EC0E73;
+  font-size: 32px;
+  margin: 0 0 8px 0;
+  font-family: inherit;
+  text-align: center;
+}
+
+.verificar-header p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.verificar-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.verificar-form input {
+  flex: 1;
+  padding: 15px 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: border-color 0.2s;
+}
+
+.verificar-form input:focus {
+  outline: none;
+  border-color: #EC0E73;
+}
+
+.btn-verificar {
+  background: #EC0E73;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 28px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.btn-verificar:hover { background: #d1156a; }
+
+/* ---------- Resultado ---------- */
+.resultado-card {
+  border-radius: 12px;
+  padding: 30px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.resultado-card.valido {
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #25a244;
+}
+
+.resultado-card.invalido {
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #EC0E73;
+}
+
+.resultado-status {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resultado-card.valido   .resultado-status { color: #25a244; }
+.resultado-card.invalido .resultado-status { color: #EC0E73; }
+
+.resultado-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.resultado-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.resultado-label {
+  font-size: 13px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+}
+
+.resultado-valor {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+  text-align: right;
+}
+
+.resultado-valor.codigo {
+  font-family: 'Courier New', monospace;
+  color: #EC0E73;
+  letter-spacing: 1px;
+}
+
+.resultado-rodape {
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  margin: 0;
+  font-style: italic;
+}
+
+.resultado-msg {
+  font-size: 15px;
+  color: #414140;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.resultado-msg.pequeno {
+  font-size: 13px;
+  color: #999;
+}
+
+.carregando,
+.erro {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+  padding: 30px;
+}
+
+.erro { color: #EC0E73; }
+
+@media (max-width: 600px) {
+  .verificar-form { flex-direction: column; }
+  .verificar-header h1 { font-size: 26px; }
+  .resultado-linha { flex-direction: column; gap: 4px; }
+  .resultado-valor { text-align: left; }
+}

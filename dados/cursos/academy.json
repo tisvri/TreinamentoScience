@@ -1,0 +1,42 @@
+{
+  "id": "academy",
+  "titulo": "Academy",
+  "area": "academy",
+  "aulas": [
+    {
+      "titulo": "Pipeline",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=bc7f67ce-0900-4759-b6b8-b18d19fe6fcb"
+    }
+  ],
+  "avaliacao": {
+    "notaMinima": 70,
+    "perguntas": [
+      {
+        "enunciado": "A Science Academy é o braço de educação médica e multiprofissional para o desenvolvimento de pesquisadores clínicos de alto desempenho da Science Valley, apoiando projetos acadêmicos que promovam o aumento da compreensão de doenças importantes e os avanços científicos da medicina?",
+        "opcoes": ["Verdadeiro", "Falso"],
+        "correta": 0
+      },
+      {
+        "enunciado": "Quais as fontes de financiamento possíveis para um estudo de iniciativa do investigador?",
+        "opcoes": [
+          "agência pública de fomento à pesquisa (CNPq, FAPESP, etc)",
+          "indústria farmacêutica",
+          "financiamento próprio",
+          "todas as respostas"
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "Em quais etapas a Science Academy pode apoiar em um estudo de iniciativa do investigador?",
+        "opcoes": [
+          "condução prática de estudos clínicos multicêntricos com a equipe de campo",
+          "adequação de aspectos regulatórios da proposta",
+          "desenho do protocolo do estudo",
+          "todas as respostas"
+        ],
+        "correta": 3
+      }
+    ]
+  }
+}

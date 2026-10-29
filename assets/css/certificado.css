@@ -1,0 +1,264 @@
+/* =============================================================
+   Página de certificado
+   ============================================================= */
+
+.cert-container {
+  max-width: 1000px;
+  margin: 30px auto 60px auto;
+  padding: 0 20px;
+}
+
+.cert-acoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-voltar {
+  color: #414140;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.btn-voltar:hover { background: #f0f0f0; }
+
+.btn-baixar {
+  background: #EC0E73;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-baixar:hover { background: #d1156a; }
+
+/* ---------- O certificado ---------- */
+.certificado {
+  background: #fff;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  aspect-ratio: 1.414 / 1; /* A4 paisagem */
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-borda {
+  flex: 1;
+  border: 3px double #EC0E73;
+  border-radius: 8px;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at top right, rgba(236, 14, 115, 0.03) 0%, transparent 60%),
+    radial-gradient(circle at bottom left, rgba(4, 18, 102, 0.03) 0%, transparent 60%);
+}
+
+.cert-conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.cert-topo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cert-logo { height: 50px; }
+
+.cert-titulo {
+  color: #EC0E73;
+  font-size: 46px;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 10px 0 4px 0;
+  text-align: center;
+}
+
+.cert-subtitulo {
+  color: #414140;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.cert-texto {
+  color: #666;
+  font-size: 15px;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.cert-nome {
+  color: #041266;
+  font-size: 32px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  margin: 8px 0;
+  text-align: center;
+}
+
+.cert-curso {
+  color: #EC0E73;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+  text-align: center;
+}
+
+.cert-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.cert-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cert-meta-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #999;
+  letter-spacing: 1px;
+}
+
+.cert-meta-valor {
+  font-size: 15px;
+  color: #414140;
+  font-weight: 600;
+}
+
+.cert-codigo {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+  color: #EC0E73;
+}
+
+.cert-rodape {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.cert-linha {
+  width: 240px;
+  height: 1px;
+  background: #414140;
+  margin-bottom: 6px;
+}
+
+.cert-assinatura {
+  font-size: 13px;
+  color: #414140;
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cert-verificacao {
+  font-size: 10px;
+  color: #999;
+  margin: 0;
+  text-align: center;
+}
+
+.cert-erro {
+  background: #fdecef;
+  border-left: 4px solid #EC0E73;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+}
+
+.cert-erro h2 {
+  color: #EC0E73;
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  font-family: inherit;
+  text-align: left;
+}
+
+.cert-erro p {
+  color: #414140;
+  font-size: 15px;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+/* =============================================================
+   Estilos de impressão — só o certificado vai para o PDF
+   ============================================================= */
+
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
+@media print {
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 297mm;
+    height: 210mm;
+    overflow: hidden;
+  }
+  .no-print { display: none !important; }
+  .cert-container {
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+  }
+  .certificado {
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 297mm !important;
+    height: 210mm !important;
+    padding: 0 !important;
+    aspect-ratio: auto !important;
+    margin: 0 !important;
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  .cert-borda {
+    border-radius: 0 !important;
+    padding: 20mm 30mm !important;
+    height: 100% !important;
+    box-sizing: border-box;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}

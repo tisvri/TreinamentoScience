@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/paginas.css">
+</head>
+
+<body>
+
+  <header id="menu-global"></header>
+
+  <div class="politica-container">
+
+    <a class="politica-voltar" href="/paginas/politicas.html">← Voltar para políticas</a>
+
+    <div id="politicaHeader" class="politica-header">
+      <span class="doc-tipo" id="politicaTipo">Carregando...</span>
+      <h1 id="politicaTitulo"></h1>
+      <p class="politica-meta" id="politicaMeta"></p>
+    </div>
+
+    <div class="politica-conteudo" id="politicaConteudo" style="display:none;">
+
+      <div class="politica-instrucao">
+        <h2>Como funciona</h2>
+        <ol class="politica-passos">
+          <li><strong>Clique no botão abaixo</strong> para abrir o documento oficial no SharePoint. Ele abre em uma nova aba.</li>
+          <li><strong>Leia o documento com atenção.</strong></li>
+          <li><strong>Volte para esta página</strong> e clique em "Li e concordo" para registrar seu aceite.</li>
+        </ol>
+      </div>
+
+      <div class="politica-acoes">
+        <a id="btnAbrir" class="btn-politica btn-politica-abrir" href="#" target="_blank" rel="noopener">
+          📄 Abrir documento
+        </a>
+        <button id="btnAceitar" class="btn-politica btn-politica-aceitar" disabled>
+          ✍️ Li e concordo
+        </button>
+      </div>
+
+      <div id="avisoAbertura" class="politica-aviso">
+        ⚠️ O botão "Li e concordo" será habilitado após você abrir o documento.
+      </div>
+
+      <div id="avisoAceito" class="politica-aceito" style="display:none;">
+        <div class="politica-aceito-icone">✅</div>
+        <h2>Aceite registrado!</h2>
+        <p id="aceitoData"></p>
+        <a class="btn-politica btn-politica-voltar" href="/paginas/politicas.html">
+          Ver outras políticas
+        </a>
+      </div>
+
+    </div>
+
+    <div id="politicaErro" class="politica-erro" style="display:none;"></div>
+
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/politica.js"></script>
+</body>
+</html>

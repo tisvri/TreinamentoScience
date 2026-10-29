@@ -1,0 +1,37 @@
+{
+  "id": "qualidade",
+  "titulo": "Treinamento de Qualidade",
+  "area": "qualidade",
+  "aulas": [
+    {
+      "titulo": "Aula 1: CEP - CONEP",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=04dc508c-9b16-4ecb-b57b-a6ef7ffd3039&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    },
+    {
+      "titulo": "Aula 2: Cadastro",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=1866f4c2-2383-4dfd-8cdf-c9b780789256&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    },
+    {
+      "titulo": "Aula 3: Folha de rosto",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=9a36730d-941d-464c-a303-d7231a0aaedc&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    },
+    {
+      "titulo": "Aula 4: Relatórios",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=e54c94d7-b639-46b9-8114-f8162a67d8b6&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    },
+    {
+      "titulo": "Aula 5: PoloTrial",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=192d1d80-731f-46c0-9b78-2d8d084d4841&embed=%7B%22ust%22%3Afalse%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    },
+    {
+      "titulo": "Aula 6: Formulario PoloTrial",
+      "duracao": "10 minutos",
+      "video": "https://forms.office.com/Pages/ResponsePage.aspx?id=prA6w5_bT0u6yRmFp-cite-u8S2Hbf1PhF3SjS42Q_VUQURPSTY3T1JQN1dMRTBIUDFQMVJBUzM1Sy4u&embed=true"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+/* =================================================================
+   base.css — Fundação global da plataforma
+   Tema Science Valley (baseado em Tema_SVRI.json)
+   ================================================================= */
+
+/* ---------- Fontes institucionais ---------- */
+@font-face {
+  font-family: 'BW Seido Raw';
+  src: url('fonts/BWSeidoRaw-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BW Seido Raw';
+  src: url('fonts/BWSeidoRaw-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* ---------- Variáveis (paleta oficial) ---------- */
+:root {
+  /* Cores da marca */
+  --sv-rosa:         #EC0E73;
+  --sv-rosa-hover:   #d1156a;
+  --sv-azul:         #041266;
+  --sv-azul-claro:   #00A1E0;
+  --sv-roxo:         #61279E;
+  --sv-magenta:      #DC2697;
+  --sv-azul-medio:   #3172BD;
+
+  /* Texto e fundo */
+  --sv-texto:        #131312;
+  --sv-texto-suave:  #6C6966;
+  --sv-texto-claro:  #ABA7A2;
+  --sv-branco:       #FFFFFF;
+  --sv-fundo-claro:  #E5E0DA;
+  --sv-fundo:        #C6C2BE;
+  --sv-borda:        #C6C2BE;
+
+  /* Status */
+  --sv-sucesso:      #1AAB40;
+  --sv-erro:         #E66C37;
+  --sv-alerta:       #E645AB;
+  --sv-info:         #118DFF;
+
+  /* Aliases retrocompatíveis */
+  --cor-primaria:       var(--sv-rosa);
+  --cor-primaria-hover: var(--sv-rosa-hover);
+  --cor-azul:           var(--sv-azul);
+  --cor-de-fundo:       var(--sv-fundo);
+  --cor-branca:         var(--sv-branco);
+  --cor-do-titulo:      var(--sv-rosa);
+  --preto85:            var(--sv-texto-suave);
+  --preto50:            var(--sv-texto-claro);
+
+  /* Fontes */
+  --fonte-principal:  "Source Sans", Arial, sans-serif;
+  --fonte-secundaria: "BW Seido Raw", "Lucida Sans", sans-serif;
+
+  /* Tamanho base */
+  --fonte-base: 16px;
+}
+
+/* ---------- Reset ---------- */
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ---------- Body ---------- */
+body {
+  font-family: var(--fonte-principal);
+  font-size: var(--fonte-base);
+  font-weight: 400;
+  color: var(--sv-texto);
+  background-color: var(--sv-fundo);
+  background-image: url('/assets/img/Fundo.webp');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+ul { list-style-type: none; }
+
+/* ---------- Tipografia ---------- */
+h1 {
+  font-family: var(--fonte-secundaria);
+  font-size: 2rem;      /* 32px */
+  color: var(--sv-rosa);
+  font-weight: bold;
+  line-height: 1.2;
+}
+h2 {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;    /* 24px */
+  color: var(--sv-rosa);
+  font-weight: bold;
+  line-height: 1.3;
+}
+h3 {
+  font-family: var(--fonte-principal);
+  font-size: 1.25rem;   /* 20px */
+  color: var(--sv-texto);
+  font-weight: bold;
+  line-height: 1.3;
+}
+h4 {
+  font-family: var(--fonte-principal);
+  font-size: 1rem;      /* 16px */
+  color: var(--sv-texto);
+  font-weight: bold;
+}
+h5 {
+  font-family: var(--fonte-principal);
+  font-size: 0.875rem;  /* 14px */
+  color: var(--sv-texto-suave);
+  font-weight: bold;
+}
+p {
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.6;
+  color: var(--sv-texto);
+}
+
+/* ---------- Header / menu superior ---------- */
+.menu_pagina {
+  background-color: var(--sv-branco);
+  padding: 12px 24px;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.img_menu { flex-shrink: 0; display: flex; align-items: center; }
+.logo {
+  height: 38px;
+  width: auto;
+  margin: 0;
+}
+
+/* Navegação principal */
+nav {
+  display: flex;
+  align-items: center;
+}
+.menu_global ul,
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_global ul li a,
+nav ul li a {
+  color: var(--sv-texto);
+  text-decoration: none;
+  font-size: 0.875rem;  /* 14px */
+  font-weight: 500;
+  padding: 6px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.menu_global ul li a:hover,
+nav ul li a:hover {
+  color: var(--sv-rosa);
+  border-bottom-color: var(--sv-rosa);
+}
+
+/* Área do usuário */
+.menu_usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.menu_nome {
+  font-size: 0.8125rem;  /* 13px */
+  color: var(--sv-texto);
+  font-weight: 500;
+}
+.menu_sair {
+  background: transparent;
+  border: 1px solid var(--sv-borda);
+  color: var(--sv-texto);
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.8125rem;  /* 13px */
+  font-weight: 500;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.menu_sair:hover {
+  background: var(--sv-rosa);
+  color: #fff;
+  border-color: var(--sv-rosa);
+}
+
+/* ---------- Botões padronizados ---------- */
+.botao,
+.botao-link,
+.botaovideo,
+.botaoforms,
+.botaovideoEmail,
+.botao-linkhub,
+.botao-linkhubsistema,
+.botao-linkhubcolaborador,
+.botao-linkpolo,
+.BtnMenu,
+.btn-curso,
+.btn-exportar,
+.btn-politica,
+.btn-doc,
+.botaoAcesso {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: var(--sv-rosa);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.875rem;   /* 14px */
+  font-weight: bold;
+  font-family: inherit;
+  text-align: center;
+  line-height: 1.2;
+  transition: background-color 0.2s, transform 0.15s;
+}
+.botao:hover,
+.botao-link:hover,
+.botaovideo:hover,
+.botaoforms:hover,
+.botaovideoEmail:hover,
+.botao-linkhub:hover,
+.botao-linkhubsistema:hover,
+.botao-linkhubcolaborador:hover,
+.botao-linkpolo:hover,
+.BtnMenu:hover,
+.btn-curso:hover,
+.btn-exportar:hover,
+.btn-politica:hover,
+.btn-doc:hover,
+.botaoAcesso:hover {
+  background-color: var(--sv-rosa-hover);
+  text-decoration: none;
+}
+
+.btn-exportar { padding: 10px 20px; }
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 768px) {
+  .menu_pagina { flex-wrap: wrap; padding: 10px 15px; gap: 10px; }
+  .menu_global ul, nav ul { gap: 16px; }
+  .menu_nome { display: none; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+}

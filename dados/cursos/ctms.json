@@ -1,0 +1,112 @@
+{
+  "id": "ctms",
+  "titulo": "CTMS",
+  "area": "tecnologia",
+  "secoes": [
+    {
+      "titulo": "Feasibility",
+      "aulas": [
+        {
+          "titulo": "Aula 1: Instituição",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=acbe7970-6ca0-4c5f-a6f1-27996c6fc87b"
+        },
+        {
+          "titulo": "Aula 2: Criando um feasibility",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=d9228014-67bf-427c-8f25-3d42b9685a6b"
+        }
+      ]
+    },
+    {
+      "titulo": "Regulatório",
+      "aulas": [
+        {
+          "titulo": "Aula 1: Áreas do sistema",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=8c3ad96b-72d4-49a5-b2f4-16f00f9916d5"
+        },
+        {
+          "titulo": "Aula 2: Mecanismo básico de troca de documentos",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=47a5cf3d-35a7-4d7c-a515-3094a115157f"
+        },
+        {
+          "titulo": "Aula 3: Mudança de parametrização de fluxos de documentos",
+          "duracao": "10 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=313020e7-df5e-44dc-ada7-4bbb3987326d"
+        },
+        {
+          "titulo": "Aula 4: Configurações pessoais",
+          "duracao": "12 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=d60ff4da-fe72-455e-a6f7-5dbf2ce1af9e"
+        },
+        {
+          "titulo": "Aula 5: Troca de documentos iniciais",
+          "duracao": "17 minutos",
+          "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=bf95ec30-035a-4c1d-a983-e87b1b73ea20"
+        }
+      ]
+    }
+  ],
+  "avaliacao": {
+    "notaMinima": 70,
+    "perguntas": [
+      {
+        "enunciado": "Qual a finalidade da plataforma CTMS regulatório?",
+        "opcoes": [
+          "Destina-se somente ao gerenciamento dos documentos",
+          "Destina-se somente ao cadastro de estudos",
+          "Destina-se a troca e ao gerenciamento de documentos",
+          "Destina-se ao financeiro"
+        ],
+        "correta": 2
+      },
+      {
+        "enunciado": "Como podemos acessar a plataforma CTMS regulatório?",
+        "opcoes": [
+          "Em posse de login e respectiva senha acessar via web o Google",
+          "Em posse de login e respectiva senha acessar via web o portal do patrocinador",
+          "Todas as alternativas estão corretas",
+          "Em posse de um login e respectiva senha, acessar via web o portal do cliente ou colaborador no site corporativo da SVRI http://svriglobal.com ou direto: http://app.svriglobal.com/#"
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "Na opção Painel de documentos, e após cadastrar o tipo de documento que serão trocados entre o patrocinador e a SVRI. Nessas trocas, as cores vermelho e verde representam qual status dos \"uploads\"?",
+        "opcoes": [
+          "Cor vermelha: não foi feito ainda nenhum upload para o tipo de documento em relação à instituição — o Patrocinador/CRO está devendo.",
+          "Cor verde: já foi feito pelo menos um upload para o tipo de documento em relação à instituição.",
+          "Não há cores para o status de \"uploads\"",
+          "Duas alternativas estão corretas"
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "É possível criar e associar os acessos para o monitor ou gerente do patrocinador/CRO na plataforma sem que os cadastros estejam devidamente efetivados?",
+        "opcoes": ["Não", "Sim"],
+        "correta": 0
+      },
+      {
+        "enunciado": "Em qual opção o usuário poderá trocar a senha?",
+        "opcoes": [
+          "Cadastro de Estudos",
+          "Usuários e poderes",
+          "Painel de Documentos",
+          "Cadastro básico"
+        ],
+        "correta": 1
+      },
+      {
+        "enunciado": "Plataforma Regulatório CTMS e Plataforma Regulatório Brasil são as mesmas plataformas, trocam dados e são de propriedade da SVRI?",
+        "opcoes": [
+          "Sim, foram desenvolvidos pela SVRI",
+          "Sim, são plataformas integradas",
+          "Não, uma foi desenvolvida pela SVRI e outra é do Governo",
+          "Sim, são plataformas desenvolvidas pela SVRI"
+        ],
+        "correta": 2
+      }
+    ]
+  }
+}

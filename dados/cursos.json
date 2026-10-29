@@ -1,0 +1,160 @@
+{
+  "cursos": [
+    {
+      "id": "primeiros-passos",
+      "titulo": "Primeiros Passos",
+      "area": "Onboarding",
+      "capa": "/assets/img/Academy.png",
+      "descricao": "Comece por aqui: políticas, tutoriais e portal do colaborador.",
+      "caminho": "/conteudo/primeiros-passos/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "lgpd",
+      "titulo": "LGPD",
+      "area": "Governança e Compliance",
+      "capa": "/assets/img/LGPD.png",
+      "descricao": "Lei Geral de Proteção de Dados.",
+      "caminho": "/conteudo/compliance/lgpd/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "academy",
+      "titulo": "Academy",
+      "area": "Academy",
+      "capa": "/assets/img/Academy.png",
+      "descricao": "Educação médica e desenvolvimento de pesquisadores clínicos.",
+      "caminho": "/conteudo/academy/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "capital-humano",
+      "titulo": "Capital Humano",
+      "area": "Capital Humano",
+      "capa": "/assets/img/LGPD.png",
+      "descricao": "Políticas e documentos de pessoas.",
+      "caminho": "/paginas/capital-humano.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "estrutura",
+      "titulo": "Estrutura T.I",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "Como a TI está organizada e como acioná-la.",
+      "caminho": "/conteudo/tecnologia/estrutura/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "glpi",
+      "titulo": "GLPI",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "Portal de chamados e suporte de TI.",
+      "caminho": "/conteudo/tecnologia/plataformas/glpi/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "facilities",
+      "titulo": "Facilities",
+      "area": "Facilities",
+      "capa": "/assets/img/Facilities.png",
+      "descricao": "Processos internos, agendamentos, compras e eventos.",
+      "caminho": "/conteudo/facilities/aula.html",
+      "publico": {
+        "obrigatorio": ["todos"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "ctms",
+      "titulo": "CTMS",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "Feasibility e Regulatório em um único curso.",
+      "caminho": "/conteudo/tecnologia/plataformas/ctms/aula.html",
+      "publico": {
+        "obrigatorio": ["pesquisa-clinica", "feasibility"],
+        "recomendado": ["ti"]
+      }
+    },
+    {
+      "id": "sap",
+      "titulo": "SAP",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "SAP Business One e plataformas Ramo.",
+      "caminho": "/conteudo/tecnologia/plataformas/sap/aula.html",
+      "publico": {
+        "obrigatorio": ["financeiro"],
+        "recomendado": ["ti"]
+      }
+    },
+    {
+      "id": "polotrial",
+      "titulo": "Polo Trial",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "Cadastro de monitoria e utilização da plataforma.",
+      "caminho": "/conteudo/tecnologia/plataformas/polotrial/aula.html",
+      "publico": {
+        "obrigatorio": ["pesquisa-clinica", "feasibility", "financeiro", "ti"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "redcap",
+      "titulo": "REDCap",
+      "area": "Tecnologia",
+      "capa": "/assets/img/Tecnologia.png",
+      "descricao": "Plataforma de captura de dados em pesquisa clínica.",
+      "caminho": "/conteudo/tecnologia/plataformas/redcap/aula.html",
+      "publico": {
+        "obrigatorio": ["pesquisa-clinica"],
+        "recomendado": ["bussiness-intelligence"]
+      }
+    },
+    {
+      "id": "financeiro",
+      "titulo": "Financeiro",
+      "area": "Financeiro",
+      "capa": "/assets/img/Financeiro.png",
+      "descricao": "Gestão financeira, protocolos e repasses médicos.",
+      "caminho": "/conteudo/financeiro/aula.html",
+      "publico": {
+        "obrigatorio": ["financeiro"],
+        "recomendado": []
+      }
+    },
+    {
+      "id": "qualidade",
+      "titulo": "Qualidade",
+      "area": "Qualidade",
+      "capa": "/assets/img/Qualidade.png",
+      "descricao": "Processos de qualidade e boas práticas.",
+      "caminho": "/conteudo/qualidade/aula.html",
+      "publico": {
+        "obrigatorio": ["pesquisa-clinica"],
+        "recomendado": []
+      }
+    }
+  ]
+}

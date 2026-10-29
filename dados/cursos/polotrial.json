@@ -1,0 +1,122 @@
+{
+  "id": "polotrial",
+  "titulo": "Treinamento Polo Trial",
+  "area": "tecnologia",
+  "aulas": [
+    {
+      "titulo": "Aula 1: Cadastro de Monitoria no PoloTrail",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=0aabb05b-73ae-44df-8497-9188c8436cb9"
+    },
+    {
+      "titulo": "Aula 2: Utilização do PoloTrail",
+      "duracao": "45 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=0d3bec58-52ce-479a-9905-86435bea731c"
+    }
+  ],
+  "avaliacao": {
+    "notaMinima": 70,
+    "perguntas": [
+      {
+        "enunciado": "Como posso recuperar minha senha se não consigo me conectar?",
+        "opcoes": [
+          "Solicitar a um usuário administrador para redefinir a senha",
+          "Enviar um email para suporte@polotrial.com",
+          "Desistir da tentativa de login",
+          "Reiniciar o sistema"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "O que devo verificar se a agenda do participante não foi gerada?",
+        "opcoes": [
+          "Se o cadastro do participante foi excluído",
+          "Se a data de inclusão ou randomização está preenchida",
+          "Se a conexão com a internet está funcionando corretamente",
+          "Se a página de agenda está atualizada"
+        ],
+        "correta": 1
+      },
+      {
+        "enunciado": "Qual é a diferença entre procedimento condicional e extra?",
+        "opcoes": [
+          "A maneira como são agendados",
+          "O local onde são realizados",
+          "A necessidade de autorização para realização",
+          "A forma como são faturados"
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "Como apontar a data de calibração dos equipamentos?",
+        "opcoes": [
+          "Consultando o manual do usuário",
+          "Enviando um email para o suporte técnico",
+          "Acessando a seção de configurações de equipamentos no sistema",
+          "Fazendo uma ligação para o departamento de manutenção"
+        ],
+        "correta": 2
+      },
+      {
+        "enunciado": "Como alterar os custos dos procedimentos?",
+        "opcoes": [
+          "Acessando a seção de procedimentos no protocolo",
+          "Desistindo da alteração",
+          "Reiniciando o sistema",
+          "Solicitando ao administrador do sistema"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "Como alterar a cotação de moedas para visualizar a perspectiva de faturamento?",
+        "opcoes": [
+          "Acessando a página de cotação de moedas no sistema",
+          "Enviando um email para o departamento financeiro",
+          "Ligando para o suporte técnico",
+          "Desinstalando e reinstalando o sistema"
+        ],
+        "correta": 1
+      },
+      {
+        "enunciado": "O que fazer se um participante foi descontinuado e suas visitas continuam aparecendo na agenda?",
+        "opcoes": [
+          "Deixar as visitas como estão",
+          "Apagar todas as visitas pendentes manualmente",
+          "Editar o participante e atualizar a agenda",
+          "Ignorar o problema e continuar normalmente"
+        ],
+        "correta": 2
+      },
+      {
+        "enunciado": "Qual a opção correta para recuperar a senha de acesso?",
+        "opcoes": [
+          "Desistir de acessar a conta",
+          "Tentar várias senhas aleatórias",
+          "Pedir a um amigo para recuperar",
+          "Enviar um email para suporte@polotrial.com"
+        ],
+        "correta": 3
+      },
+      {
+        "enunciado": "O que verificar se a agenda do participante não foi gerada?",
+        "opcoes": [
+          "Se a data de inclusão ou randomização está preenchida",
+          "Se todas as visitas estão marcadas como concluídas",
+          "Se o cadastro do participante está completo",
+          "Se o sistema está com problemas de conexão"
+        ],
+        "correta": 0
+      },
+      {
+        "enunciado": "Como marcar a data de calibração dos equipamentos?",
+        "opcoes": [
+          "Pedindo a um colega para fazer isso",
+          "Enviando um fax para o departamento de manutenção",
+          "Escrevendo um memorando e entregando ao departamento de manutenção",
+          "Acessando a seção de equipamentos no sistema"
+        ],
+        "correta": 3
+      }
+    ]
+  }
+}

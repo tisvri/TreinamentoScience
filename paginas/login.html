@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar na Plataforma</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <style>
+    .tela-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    .tela-login h1 {
+      color: var(--cor-do-titulo, #EC0E73);
+      font-size: 42px;
+      margin: 20px 0 10px 0;
+    }
+    .tela-login p {
+      font-size: 18px;
+      color: var(--preto85, #414140);
+      margin-bottom: 30px;
+    }
+    .btn-microsoft {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #EC0E73;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-microsoft:hover { background: #d1156a; }
+    #msg-erro {
+      color: red;
+      margin-top: 20px;
+      display: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tela-login">
+    <img src="../assets/img/logo-science-valley.png" alt="Science Valley" style="height: 60px;">
+    <h1>Plataforma de Treinamentos</h1>
+    <p>Entre com sua conta corporativa para acessar os cursos.</p>
+
+    <button class="btn-microsoft" id="btnEntrar">
+      <svg width="20" height="20" viewBox="0 0 23 23" fill="white">
+        <path d="M1 1h10v10H1zM12 1h10v10H12zM1 12h10v10H1zM12 12h10v10H12z"/>
+      </svg>
+      Entrar com Microsoft
+    </button>
+
+    <p id="msg-erro"></p>
+  </div>
+
+  <script type="module">
+    import { auth } from '../assets/js/firebase.js';
+    import {
+      OAuthProvider,
+      signInWithPopup,
+      onAuthStateChanged
+    } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+    // Descobrir para onde voltar depois do login
+    const params  = new URLSearchParams(window.location.search);
+    const destino = params.get('redir') || '/paginas/inicio.html';
+
+    // Configurar provedor Microsoft (só domínio da empresa)
+    const provider = new OAuthProvider('microsoft.com');
+    provider.setCustomParameters({ tenant: 'svriglobal.com' });
+
+    // Se já estiver logado, vai direto para o destino
+    onAuthStateChanged(auth, (user) => {
+      if (user) window.location.href = destino;
+    });
+
+    // Botão de login
+    const btn  = document.getElementById('btnEntrar');
+    const erro = document.getElementById('msg-erro');
+
+    btn.onclick = async () => {
+      erro.style.display = 'none';
+      try {
+        await signInWithPopup(auth, provider);
+        // O onAuthStateChanged acima já redireciona
+      } catch (e) {
+        erro.textContent = 'Erro ao entrar: ' + e.message;
+        erro.style.display = 'block';
+        console.error(e);
+      }
+    };
+  </script>
+</body>
+</html>

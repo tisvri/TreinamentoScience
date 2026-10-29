@@ -1,0 +1,52 @@
+{
+  "id": "facilities",
+  "titulo": "Facilities",
+  "area": "facilities",
+  "aulas": [
+    {
+      "titulo": "Agendamentos de Reuniões com o CEO.",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=c30c55c9-c0bd-4e37-8720-5a848e2090ed"
+    },
+    {
+      "titulo": "Recebimento e Envio de Correspondências, Documentos e Encomendas.",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=3add4802-45b4-4bd7-a23e-534f58642452"
+    },
+    {
+      "titulo": "Fluxo de Compras por chamado.",
+      "duracao": "10 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=569369c7-ca60-443c-97da-cadbf8756713"
+    },
+    {
+      "titulo": "Solicitação de Passagens e Hotéis.",
+      "duracao": "12 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=3ae92535-d664-463e-9ebe-d8ed9cc0903d"
+    },
+    {
+      "titulo": "Solicitações de Manutenção ou Reparos.",
+      "duracao": "17 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=9132a501-e028-4d32-b8b0-dff865df19a9"
+    },
+    {
+      "titulo": "Limpeza e Organização dos Ambientes",
+      "duracao": "9 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=44be56eb-2ae5-4e65-92d1-5de7010c555b"
+    },
+    {
+      "titulo": "Eventos Internos e Externos.",
+      "duracao": "12 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=0fa34391-d42d-4fbc-b579-1816c145ad50"
+    },
+    {
+      "titulo": "Controle de Acessos Internos.",
+      "duracao": "13 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=c022e2fd-2d7d-406c-a2e9-e7f1ed333f64"
+    },
+    {
+      "titulo": "Estacionamento por Unidade.",
+      "duracao": "8 minutos",
+      "video": "https://netorgft4487772.sharepoint.com/sites/ScienceValley/_layouts/15/embed.aspx?UniqueId=c1c8adbb-3a99-4eaf-9af7-c306569a0fc4"
+    }
+  ]
+}

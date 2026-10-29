@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificar Certificado</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/verificar.css">
+</head>
+
+<body>
+
+  <header id="menu-global"></header>
+
+  <div class="verificar-container">
+
+    <div class="verificar-header">
+      <h1>Verificar Certificado</h1>
+      <p>Digite o código de verificação impresso no certificado.</p>
+    </div>
+
+    <form class="verificar-form" id="formVerificar">
+      <input
+        type="text"
+        id="inputCodigo"
+        placeholder="SVRI-2026-XXXX"
+        autocomplete="off"
+        spellcheck="false"
+        maxlength="20">
+      <button type="submit" class="btn-verificar">Verificar</button>
+    </form>
+
+    <div class="verificar-resultado" id="resultado"></div>
+
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/verificar.js"></script>
+</body>
+</html>

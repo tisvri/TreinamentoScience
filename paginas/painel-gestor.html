@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Gestor</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/paginas.css">
+</head>
+
+<body>
+
+  <header id="menu-global"></header>
+
+  <div class="pagina-titulo">
+    <h1>Painel do Gestor</h1>
+    <p>Acompanhamento de treinamentos e aceites da equipe</p>
+  </div>
+
+  <div class="painel-tabs">
+    <button class="painel-tab ativo" data-tab="cursos">📚 Cursos</button>
+    <button class="painel-tab" data-tab="aceites">✍️ Aceites</button>
+  </div>
+
+  <div class="painel-controles">
+    <input type="text" id="busca" placeholder="Buscar por nome ou e-mail...">
+
+    <select id="filtroSetor">
+      <option value="todos">Todos os setores</option>
+    </select>
+
+    <select id="filtroStatus">
+      <option value="todos">Todos os colaboradores</option>
+      <option value="pendentes">Só com pendências</option>
+      <option value="concluidos">Só sem pendências</option>
+    </select>
+
+    <select id="filtroCurso">
+      <option value="todos">Filtrar por curso...</option>
+    </select>
+
+    <select id="filtroCursoStatus">
+      <option value="todos">(qualquer status)</option>
+      <option value="fez">✓ Fez</option>
+      <option value="naofez">⚠️ Não fez</option>
+    </select>
+
+    <button id="btnLimpar" class="btn-limpar">🧹 Limpar</button>
+    <button id="btnExportar" class="btn-exportar">📥 Exportar CSV</button>
+  </div>
+
+  <div class="painel-resumo" id="resumo"></div>
+
+  <div id="painelCursos" class="painel-conteudo-aba">
+    <div class="painel-tabela-container">
+      <table class="painel-tabela">
+        <thead id="tabelaCabecalho"></thead>
+        <tbody id="tabelaCorpo"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div id="painelAceites" class="painel-conteudo-aba" style="display:none;">
+    <div class="painel-tabela-container">
+      <table class="painel-tabela">
+        <thead id="tabelaCabecalhoAceites"></thead>
+        <tbody id="tabelaCorpoAceites"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/painel-gestor.js"></script>
+</body>
+</html>

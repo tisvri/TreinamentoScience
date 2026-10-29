@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+  <link rel="icon" href="https://svriglobal.com/wp-content/uploads/2021/04/logo-science-valley-favicon.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/paginas.css">
+</head>
+
+<body>
+
+  <header id="menu-global"></header>
+
+  <div class="inicio-container">
+
+    <!-- Boas-vindas (topo, centralizado) -->
+    <div class="inicio-boas-vindas">
+      <h1>Bem-vindo(a) à Science Valley!</h1>
+      <p>Este é o seu portal de treinamentos e integração. Aqui você encontra os cursos, políticas e materiais que fazem parte do seu dia a dia na instituição.</p>
+    </div>
+
+    <!-- Vídeo (esquerda) + Por onde começar (direita) -->
+    <div class="inicio-hero">
+
+      <div class="inicio-video">
+        <iframe
+          src="https://www.youtube.com/embed/GYeC2IeSzSw"
+          title="Vídeo institucional"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="inicio-caminhos">
+        <h2>Por onde começar</h2>
+
+        <a class="caminho-card destaque" href="/paginas/primeiros-passos.html">
+          <span class="caminho-etiqueta">RECOMENDADO</span>
+          <h3>🚀 Primeiros Passos</h3>
+          <p>Novo por aqui? Comece por este treinamento.</p>
+          <span class="caminho-seta">Começar agora →</span>
+        </a>
+
+        <a class="caminho-card" href="/paginas/cursos.html">
+          <h3>📚 Ver todos os cursos</h3>
+          <p>Explore o catálogo completo de treinamentos.</p>
+          <span class="caminho-seta">Acessar catálogo →</span>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Pendências (abaixo, centralizado) -->
+    <div class="inicio-pendencias-wrapper">
+      <div class="inicio-pendencias" id="pendencias" style="display:none;"></div>
+    </div>
+
+  </div>
+
+  <script type="module" src="../assets/js/app.js"></script>
+  <script type="module" src="../assets/js/inicio.js"></script>
+</body>
+</html>

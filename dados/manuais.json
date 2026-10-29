@@ -1,0 +1,11 @@
+{
+  "manuais": [
+    {
+      "id": "redcap",
+      "titulo": "Manual REDCap",
+      "tipo": "Manual",
+      "area": "Tecnologia",
+      "arquivo": "/conteudo/tecnologia/plataformas/redcap/manual.pdf"
+    }
+  ]
+}
